@@ -1,0 +1,201 @@
+
+% This is Graduate thesis for msong 2016.
+% This template is optimized for Yonsei University
+% edited by msong : msong@cern.ch
+\documentclass[a4paper,11pt]{report}
+\usepackage{grad,times,epsfig,calc,subfigure}
+\usepackage{amsmath,amssymb}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{url}
+\usepackage{lineno}
+\usepackage[toc,page]{appendix}
+
+% Table of Content customization
+\usepackage{titletoc}
+\usepackage[subfigure]{tocloft} % resolve conflict with subfigure
+\usepackage{ifthen}
+\usepackage{dashrule}
+%\usepackage[nottoc,numbib]{tocbibind}
+%\settocbibname{References}
+
+% To support Korean characters
+\usepackage{CJKutf8}
+\newenvironment{Korean}{\CJKfamily{mj}}{}
+
+
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{Z}{>{\centering\arraybackslash}X} 
+
+
+\renewcommand{\baselinestretch}{1}
+%\renewcommand{\baselinestretch}{1.21} % one and one-half spacing 11-pt
+\renewcommand{\arraystretch}{1.3}
+
+\renewcommand{\cftfigfont}{\hspace{-16pt}Figure }
+\renewcommand{\cfttabfont}{\hspace{-16pt}Table }
+\renewcommand{\cftdotfill}{\dotfill}
+\renewcommand{\cftdotsep}{}
+\renewcommand{\cftnodots}{}
+%\ifthenelse{\equal{aa}{aaa}}{TRUE}{}
+
+%
+% Input your Title, Name, Date, Department, Degree here.
+%
+\newcommand{\txtTitle}{Study of correlation between flow harmonics in Heavy Ion collisions at $\sqrt{s_{NN}} =$ 2.76 TeV with ALICE at LHC }
+\newcommand{\txtAuthor}{Myunggeun Song} 
+\newcommand{\txtDate}{\today}
+\newcommand{\txtDepartment}{Physics Department}
+\newcommand{\txtThesisName}{Ph.D Thesis}
+\newcommand{\txtDegree}{}
+
+
+\title{\txtTitle}
+\author{\txtAuthor}
+\date{\txtDate}
+
+
+\begin{document}
+
+% Title page
+\maketitle \pagestyle{plain} \baselineskip 6.5mm
+
+% Committee Signature page
+\iffalse
+
+\newpage
+\thispagestyle{empty}
+
+  \null
+  \begin{center}
+    \vskip -1.4cm
+    {\hskip 5cm \fontsize{14pt}{14pt}\selectfont This certifies that the doctoral thesis \\ 
+    \hskip 5cm of \txtAuthor \ is approved.}
+    
+    \vskip 3cm%
+    {\hskip 5cm\fontsize{12pt}{12pt}\selectfont \underline{\hskip 7cm}}\vspace*{0.25cm}\\
+    \hskip 5cm\fontsize{12pt}{12pt}\selectfont Thesis Supervisor: [Ju Hwan Kang]\\
+    \vskip 1.5cm
+    {\hskip 5cm\fontsize{12pt}{12pt}\selectfont \underline{\hskip 7cm}}\vspace*{0.25cm}\\
+    \hskip 5cm\fontsize{12pt}{12pt}\selectfont [Su Houng Lee]\\
+    \vskip 1.5cm
+    {\hskip 5cm\fontsize{12pt}{12pt}\selectfont \underline{\hskip 7cm}}\vspace*{0.25cm}\\
+    \hskip 5cm\fontsize{12pt}{12pt}\selectfont [Koan Sik Joo]\\
+    \vskip 1.5cm
+    {\hskip 5cm\fontsize{12pt}{12pt}\selectfont \underline{\hskip 7cm}}\vspace*{0.25cm}\\
+    \hskip 5cm\fontsize{12pt}{12pt}\selectfont [Eun Joo Kim]\\
+    \vskip 1.5cm
+    {\hskip 5cm\fontsize{12pt}{12pt}\selectfont \underline{\hskip 7cm}}\vspace*{0.25cm}\\
+    \hskip 5cm\fontsize{12pt}{12pt}\selectfont [Dong Jo Kim]\\
+    \vskip 2.2cm%
+    
+	{\fontsize{14pt}{24pt} \selectfont
+	The Graduate School \par
+	Yonsei University \par
+	December 2016 \par 
+	%\txtDate \par
+	}
+
+  \end{center}
+  \par
+\clearpage
+
+\fi
+
+
+% Ack page
+%\input{acknowledgment.tex} \pagestyle{plain}
+%\thispagestyle{empty}
+%\par\vspace*{.35\textheight}{\centering \textit{This work is dedicated to my beloved wife, Miyoung Cho \newline and my dear %family} \par}
+
+% Table of Contents
+
+\clearpage 
+	\pagenumbering{roman} 
+	\tableofcontents 
+
+
+%List of Figures
+\clearpage
+	\addcontentsline{toc}{chapter}{\protect\numberline{} \vspace{-10pt}\hspace*{-0.3in} List of Figures\dotfill}
+	\listoffigures
+
+% List of Tables
+\clearpage
+	\addcontentsline{toc}{chapter}{\protect\numberline{} \vspace{-10pt}\hspace*{-0.3in} List of Tables}
+	\listoftables
+
+% Abstract
+	\addcontentsline{toc}{chapter}{\protect\numberline{} \hspace*{-0.3in} Abstract}
+\input{abstract.tex}
+
+
+% Table of Content format customization
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries\chaptername\ \thecontentslabel.\quad }% <numbered-entry-format>
+  { }% <numberless-entry-format>
+  {\bfseries\dotfill\contentspage} % <filler-page-format>
+
+\titlecontents{section}% <section-type>
+  [15pt]% <left>
+  {}% <above-code>
+  {\thecontentslabel \quad }% <numbered-entry-format>
+  { }% <numberless-entry-format>
+  {\dotfill\contentspage} % <filler-page-format>
+
+%\input{Introduction.tex}
+
+%
+% Document Body
+%
+\linenumbers
+\clearpage
+\pagenumbering{arabic}
+\input{intro.tex}
+\clearpage
+\input{experiment_setup.tex}
+\clearpage
+\input{analysis.tex}
+\clearpage
+\input{results.tex}
+\clearpage
+\input{conclusion.tex}
+
+
+\clearpage
+\begin{appendices}
+\input{AppendixA.tex}
+\input{AppendixB.tex}
+\input{AppendixC.tex}
+\input{AppendixD.tex}
+\end{appendices}
+
+%Any other bib style can be used.
+%\bibliographystyle{IEEEbib}
+\bibliographystyle{ieeetr}
+% Add 'References' to Table of Content with custom format.
+\titlecontents{chapter}% <section-type>
+  [0pt]% <left>
+  {}% <above-code>
+  {\bfseries\ \hspace{13pt} }% <numbered-entry-format>
+  { }% <numberless-entry-format>
+  {\bfseries\dotfill\contentspage} % <filler-page-format>
+  
+\addcontentsline{toc}{chapter}{\protect\numberline{} \vspace{0pt}\hspace*{-0.3in} References}
+%Your .bib path!
+\bibliography{myThesisRefs}
+
+% Add '국문요약' to Table of Content with custom format.
+%\input{abstract_in_korean.tex}
+%\input{acknowledgment.tex} \pagestyle{plain}
+
+\end{document}
+
+

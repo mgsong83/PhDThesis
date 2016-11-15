@@ -1,0 +1,70 @@
+
+\newpage\
+\chapter{Choosing weight for event average}
+
+The double angular brakets in flow analysis means usually means that one for average over all particles, and the other for the average over all events.
+
+	$$ \left\langle  \left\langle . . . \right\rangle  \right\rangle = \langle \langle . . .  \rangle _{particles} \rangle _{events} $$
+
+And for the average over events, the finding proper event weights are important to get the results without bias. 
+
+One approach to get event averaged results, is set the all event weights as 1 (equal weights). For example, measure the flow coefficient($v_n$) in given centrality, we measure $v_n$ for each events, and calculate mean $v_n$ as average of measured $v_n$ with uniform weights(or materially no weights). But this approach is not correct in case of multi-particle correlations. 
+
+In this analysis of $SC(m,n)$, the measurement performed in two procedure, first over all distinct particle quadruplets in an event, and then in the second step the single-event averages were weighted with  "number of combinations" for correct event weight.
+
+To prove this, let's think a set of N events, where the multiplicity of each event is $M_{i}$ where the $i$ denote for $i$th event. 
+
+Then the equation for 2-particle correlation Eq.\ref{eq:2pcorr} can be written as like
+
+\begin{equation}
+	\langle \langle 2 \rangle \rangle  \equiv 	\frac{\sum_{i=1}^{N} \sum_{a,b=1}^{M_i} e^{in(\phi_{i,a}-\phi_{i,b})} }{\sum_{i=1}^{N} \sum_{a,b=1}^{M_i}}
+	\label{eq:apendix2pcorr}
+\end{equation}
+
+
+with the constraints $a \neq b$.  The equation \ref{eq:apendix2pcorr} implies that, we calculated every possible pairs of particle in an events and by using constraints, we eliminated all contributions from self-correlations. If we take two distinct pairs of particles, one formed in event A and another formed in event B, then the above definition ensures that these two distinct pairs of particles will be taken into account at equal footing (i.e. a unit weight has being assigned to each distinct pair of particles in any event in Eq.\ref{eq:apendix2pcorr}). The denominator in definition simply constant the total number of all such distinct pairs in all events. In general form, for the definition of the $i$th event 
+
+\begin{equation}
+	 \langle 2 \rangle _{i}  \equiv 	\frac{ \sum_{a,b=1}^{M_i} e^{in(\phi_{i,a}-\phi_{i,b})} }{ \sum_{a,b=1}^{M_i}}
+	\label{eq:appendix2pcorrith}
+\end{equation}
+\smallskip
+
+And the total number the distinct pairs in the $i$th events will be evaluated as follows 
+
+\begin{equation}
+ \sum_{a,b=1}^{M_i} = \left( \sum_{a=1}^{M_i} \right) \left)\sum_{b=1}^{M_i} \right) - \sum_{a=b=1}^{M_i} = M_i^2 - M_i = M_i(M_i-1)
+\end{equation}
+\smallskip
+
+Extend to all event sets,
+
+\begin{equation}
+	langle \langle 2 \rangle \rangle = \frac{\sum_{i=1}^{N} \sum_{a,b=1}^{M_i} e^{in(\phi_{i,a}-\phi_{i,b})} }{\sum_{i=1}^{N} M_i(M_i-1)}
+\end{equation}
+
+and 
+
+\begin{equation}
+	 \langle 2 \rangle _{i}  \equiv 	\frac{ \sum_{a,b=1}^{M_i} e^{in(\phi_{i,a}-\phi_{i,b})} }{ M_i(M_i-1)}
+\end{equation}
+
+Then, we immediately get the following results by insert above equation to the original Eq. \ref{eq:apendix2pcorr}
+
+
+\begin{equation}
+	\langle \langle 2 \rangle \rangle  = 	\frac{\sum_{i=1}^{N} M_i(M_i-1) \times \frac{\sum_{a,b=1}^{M_i} e^{in(\phi_{i,a}-\phi_{i,b})}}{M_i(M_i -1 )} }{\sum_{i=1}^{N} M_i(M_i - 1)}
+	\label{eq:rhs}
+\end{equation}
+
+and finally we get, 
+
+\begin{equation}
+		\langle \langle 2 \rangle \rangle  = 	\frac{\sum_{i=1}^{N}M_i(M_i-1) \times \langle 2 \rangle _{i} }{\sum_{i=1}^{N}M_i(M_i-1)}
+		\label{eq:weight_final}
+\end{equation}
+
+As seen in Eq. \ref{eq:weight_final}, the event weight number of combinations has to be used to weight single event average $\langle 2 \rangle$ to obtain exactly the all event average $\langle \langle 2 \rangle \rangle $. The prof of 4-particle correlation can be done in similar way. 
+
+
+

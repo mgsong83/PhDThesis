@@ -1,0 +1,785 @@
+% !TEX root = thesis.tex
+
+%\section{Introduction}
+
+\begin{abstract}
+In this thesis I study two aspects related to anisotropic flow coefficients $v_2$ and $v_3$ in heavy-ion collisions. The study is done for Pb-Pb collisions at $\snn = 2.76\tev$ using data simulated by A MultiPhase Transport (AMPT) model. First I study flow of identified charged particles, pions, kaons and protons. At RHIC in Au-Au collisions at $\snn=200\gev$ it has been observed that scaling $v_2$ of identified hadrons with the number of quarks and plotting it as a function of transverse kinetic energy $KE_T$ produces almost perfect scaling between different particle species. This was taken as an indication that flow is mainly generated in the partonic phase and is not strongly affected by the hadronic phase. However, in Pb-Pb collisions at $\snn = 2.76\tev$ in LHC the scaling has been observed to break down. AMPT model uses a simple quark coalescence model, which was used to explain the scaling at RHIC energies. Because of the scaling breakdown at LHC the coalescence model has been challenged in the field. In my studies I have observed that AMPT does not produce perfect quark number scaling, even though it would be expected because of the coalescence model.
+
+
+ %In this thesis I have found out that in terms of quark number scaling the AMPT data behaves like LHC data. 
+
+Another aspect studied here is event-by-event flow. Event-by-event flow is connected to the fluctuations in the initial collisions. Only recently the field has started to study fluctuations and event-by-event flow. I will show distributions of event-by-event flow coefficients in the AMPT model. In addition to the true fluctuations the distributions have a significant smearing component from limited resolution resulting from finite multiplicity in a single event. I will use a data-driven unfolding method based on an iterative Bayesian procedure to remove the smearing effects. I will test the procedure in a toy Monte Carlo simulation to test its performance and apply it to AMPT data. I have observed that based on the Monte Carlo the procedure works for $v_2$ in general and for $v_3$ in central collisions.
+
+%measurement of event-by-event harmonic flow coefficients $v_2$ and $v_3$ and unfolding these distributions with a Bayesian unfolding procedure. The unfolding method was first studied with a simple Monte Carlo simulation with various magnitudes of flow and multiplicities. The method works well in the Monte Carlo simulation for parameters corresponding to $v_2$ and moderately well for parameters corresponding to $v_3$ in central collisions but fails for $v_3$ in peripheral collisions. The unfolding method is also applied to the AMPT data. The distributions for $v_2$ in central collisions and $v_3$ in general follow the radial projection of a two dimensional Gaussian. This is consistent with flow caused purely by initial state fluctuations.
+%Anisotropic flow coefficients $v_2$ and $v_3$ in heavy-ion collisions are studied using two methods; an event plane method and two particle correlations. These are tested with a simplified Monte Carlo simulation. The event plane method is also applied to the Multiphase Transport (AMPT) model. Centrality and transverse momentum, $\pt{}$, dependence of flow coefficients is studied as an average over a large number of events as well as on an event-by-event basis. The $\pt{}$ dependence of flow coefficients in various centrality bins is compared to ALICE measurements in Pb-Pb collisions at $\snn = 2.76\tev$ in LHC ~\cite{arxiv12055761}. The comparison revealed that for low and very high $\pt{}$ the model agrees with the data. In the medium-$\pt{}$ range AMPT fails to describe the data.
+\end{abstract}
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+
+\clearpage
+\section{Introduction}
+ At sufficiently high energies quarks and gluons are no longer bound to hadrons, but they form a deconfined state known as Quark-Gluon plasma (QGP). The main goal of heavy-ion physics is the study of QGP and its properties.
+One of the experimental observables that is sensitive to the properties of QGP is the azimuthal distribution of particles in the plane perpendicular to the beam direction. 
+
+When nuclei collide at non-zero impact parameter (non-central collisions), the geometrical overlap region is asymmetric. This initial spatial asymmetry is converted via multiple collisions into an anisotropic momentum distribution of the produced particles. For low momentum particles ($\pt{} \lesssim 3$ \gevc), this anisotropy is understood to result from hydrodynamically driven flow of the QGP~\cite{Adcox:2004mh, Adams:2005dq, Ollitrault:1992, Heinz:2002, Shuryak:2009}. 
+
+One way to characterize this anisotropy is with coefficients from a Fourier series parametrization of the azimuthal angle distribution of emitted hadrons. The second order coefficient, which is also known as elliptic flow, shows clear dependence on centrality. The collision geometry is mainly responsible for the elliptic flow. Higher harmonics don't depend that much on centrality. These higher harmonics carry information about the fluctuations in collisions. The event-by-event fluctuations have an increasing importance in measurements. 
+
+In this master's thesis identified charged particle flow and quark number scaling is studied at LHC energies in A MultiPhase Transport (AMPT)~\cite{Lin:2004en, Xu:2011fi} model. AMPT is a hybrid transport model, which models an ultra-relativistic nuclear collision using many tools of Monte Carlo simulation. The results are compared to ALICE results. In my Bachelor's thesis I studied methods to determine the event plane and flow coefficients in heavy-ion collisions with AMPT data. In this thesis I have performed further analysis on the AMPT data and studied flow coefficients of identified charged particles. 
+
+One important aspect in flow of different particle species has been quark number scaling. At RHIC energies  $\snn=200\gev$ it was found to work almost perfectly for pions, kaons and protons. This was taken as a strong indication that anisotropic flow at RHIC develops primarily in the partonic phase, and is not strongly influenced by the subsequent hadronic phase~\cite{Lacey:2012ma}. At LHC in Pb-Pb collisions $\snn=2.76\tev$ it was observed that for proton $v_2$ the quark number scaling does not work~\cite{Lacey:2012ma}. The RHIC observations were explained by assuming that hadronization occurs through a simple quark coalescence model, where three nearest quarks are combined into a hadron or nearest quark-antiquark pair forms a meson. AMPT model, that I study, uses this quark coalescence model and therefore it is important to see whether it produces quark number scaling.  
+
+%This has been attributed to a blueshift in proton $\pt{}$ and correcting $\pt{}$ with a similar redshift restores the scaling. The possible origin of this blueshift is however still unclear.
+
+Another aspect that I studied is event-by-event flow and the unfolding method. Unfolding is used to restore the original $v_n$ distribution from the observed distribution, that is significantly smeared by limited resolution resulting from finite multiplicity in a single event. In this thesis I use a data-driven unfolding method based on an iterative Bayesian procedure. I first test the performance in a toy Monte Carlo simulation and later apply it to the AMPT data. Knowing the performance of unfolding is required to know how reliable measured event-by-event distributions are. 
+
+For future studies also the correlation between observed and true $v_n$ is important. It has been proposed that studying jet properties separately for events with strong or weak anisotropy would shed some new light on path length dependence and energy loss models. For the separation on an event-by-event basis one has to keep in mind the relation between observed and true $v_n$.
+
+
+This thesis is organised as follows: In the first section I will discuss Quantum Chromodynamics, its history, its properties and how it leads to quark-gluon plasma.
+ I will give a brief introduction to the motivation and history of heavy-ion physics. At the end of this chapter I will give an example of how study of heavy-ion physics is related to string theory and the search for physics beyond the standard model.
+
+In section \ref{sec:features} I discuss the features of heavy-ion collisions. I present basic physics behind the studied phenomena in more detail. I will discuss flow, its origins, its relation to energy loss models and the two phenomena studied in this thesis, fluctuating events and identified charged particle flow. I present results from RHIC and LHC measurements of identified particle flow. Here I also define quark number scaling and the quark coalescence model used to explain it.
+
+In section \ref{sec:methods} I present the methods I use in this thesis to study anisotropic flow. I will show the event plane method used to calculate flow coefficients and the two sub event method used to estimate event plane resolutions. Also in this section I will present the unfolding procedure and a simple Monte Carlo simulation testing the performance of this procedure.
+
+In section \ref{sec:AMPT} I introduce the AMPT model used to generate the data I study in this thesis. I will go through the components used in the model. This is followed by my analysis in section \ref{sec:analysis}. I will show my analysis and my results on identified particle flow and unfolding event-by-event distributions.
+
+Finally I will discuss my results in section \ref{sec:disc} and summarize my thesis in \ref{sec:sum}.
+
+\pagebreak
+\subsection{Quantum chromodynamics}
+\subsubsection{Foundation of QCD}
+There are four known basic interactions in the universe: gravity, electromagnetic, weak and strong interactions. The standard model of particle physics includes three of these excluding the gravitational interaction. The theory of strong interactions is known as Quantum Chromodynamics (QCD).
+
+The development of QCD began after the introduction of new powerful particle accelerators that were capable of particle physics research in the 1950s. Before this particles were mainly discovered from cosmic rays. Positrons, neutrons and muons were discovered in the 1930s and charged pions were discovered in 1947~\cite{Lattes:1947}. The neutral pion was discovered in 1950~\cite{Bjorklund:1950}.
+
+The Lawrence Berkeley National Laboratory started the Bevalac accelerator in 1954, Super Proton Synchrotron (SPS) in CERN began operating in 1959 and the Alternating Gradient Synchrotron at Brookhaven started in 1960. With an energy of $33\gev$ AGS was the most powerful accelerator of that time. By the beginning of 1960s several new particles had been discovered. These include antiprotons, antineutrons, $\Delta$-particles and the six hyperons ($\Xi^0$, $\Xi^-$, $\Sigma^{\pm}$, $\Sigma^0$ and $\Lambda$).
+
+Facing this number of different particles started the search for symmetries. Already in 1932 Heisenberg~\cite{Heisenberg:1932} 
+had proposed an isospin model to explain similarities between the proton and the neutron. In 1962 Gell-Mann and Ne'eman presented that particles sharing the same quantum numbers (spin, parity) could be organised using the symmetry of SU(3).~\cite{Gell-Mann:1962} Heisenberg's Isospin model followed the symmetry of SU(2). Using the SU(3) model known baryons and mesons could be presented as octets. This also lead to the discovery of the $\Omega^{-}$ particle since this was missing from the SU(3) decuplet that included heavier baryons. 
+
+The most simple representation of SU(3) is a triplet. Inside this triplet particles would have electric charges $2/3$ or $-1/3$. However, these had not been detected. In 1964 Gell-Mann~\cite{Gell-Mann:1964} and Zweig proposed that baryons and mesons would be bound states of these three hypothetical triplet particles that Gell-Mann called quarks. Now we know that these are the $u$, $d$ and $s$ quarks. The original quark model had still problems; it was violating the Pauli exclusion principle. For example the $\Omega^{-}$ particle is comprised of three $s$ quarks, two of which would have exactly the same quantum states. 
+
+The problem was solved by the colour quantum number. The first to present the idea of colour had been Greenberg already in 1964~\cite{Greenberg:1964}. In 1971 Gell-Mann and Frtizsch presented their model, which solved the antisymmetry problem. They added a colour quantum number to quarks, which separated quarks of the same species. In the new colour model the baryonic wave function became
+
+\begin{equation}
+\left( qqq\right)\rightarrow\left(q_rq_gq_b-q_gq_rq_b+q_bq_rq_g-q_rq_bq_g+q_gq_bq_r-q_bq_gq_r\right),
+\end{equation}
+
+\noindent The colour model was also supported by experimental evidence. The decay rate of a neutral pion with the addition of colours is
+
+\begin{equation}
+\Lambda\left(\pi^0\rightarrow\gamma \gamma\right) = \frac{\alpha^2}{2\pi}\frac{N_c^2}{3^2}\frac{m_\pi^3}{f_\pi^2}.
+\end{equation} 
+
+For $N_c=3$ this gives $7.75 \;\mathrm{eV}$ and the measured value is $(7.86\pm0.54)\,\mathrm{eV}$~\cite{Williams:1988sg}.
+
+Another observable that combines the colour information to the number of quark flavours is The Drell-Ratio $R$~\cite{Krolikowski:1974jx}
+
+\begin{equation}
+R=\frac{\sigma\left(e^++e^-\rightarrow\mathrm{hadrons}\right)}{\sigma\left(e^++e^-\rightarrow\mu^++\mu^-\right)}=N_c\sum_fQ_f^2
+\end{equation}
+
+This has the numerical value 2 when including the three light quarks $u$, $d$ and $s$. When the collision energy reaches the threshold of heavy quark ($c$ and $b$) production processes this increases to $10/3$ (for $f=u,d,s,c$) and $11/3$ (for $f=u,d,s,c,b$). The threshold of $t\bar t$ production, $\sqrt{s}\approx350\gev$ has not been reached so far by any $e^+e^-$ colliders.
+
+The colour model explained why no free quarks had been observed. Only colour neutral states are possible. The simplest ways of producing a colour neutral object are the combination of three quarks, and the combination of a quark-antiquark pair. These are known as baryons and mesons.
+
+After the addition of colour the main ingredients of QCD had been established. The final quantum field theory of Quantum Chromodynamics formed quickly between 1972 and 1974. Main part of this was the work Gross, Wilczek, Politzer and George did for non-abelian gauge field theories~\cite{gross1973ultraviolet, politzer1973reliable, gross1973asymptotically, gross1974asymptotically, georgi1974electroproduction}. Gross, Wilczek and Politzer received the Nobel Prize in Physics for their work in 2004.
+
+ The role of gluons was as a colour octet was presented by Fritzsch, Gell-Mann and Leutwyler in 1973~\cite{fritzsch1973advantages}. The theory had now 8 massless gluons to mediate the strong interaction. Unfortunately these gluons had not been observed experimentally . Indirect evidence of the existence had been seen as it was observed that only about half of the momentum of protons was transported by the quarks~\cite{25gluons}. Direct evidence should be seen in electron-electron collisions as a third, gluonic, jet in addition to two quark jets. Three jet events were first seen in 1979 at the PETRA accelerator at DESY~\cite{Brandelik1979243, PhysRev.43.830, Berger1979418}.
+
+\pagebreak
+
+\subsubsection{Asymptotic Freedom and Deconfinement of Quarks and Gluons}
+In Quantum Electrodynamics (QED) the electric charge is screened. In the vicinity of a charge, the vacuum becomes polarized. Virtual charged particle-antiparticle pairs around the charge are arranged so that opposing charges face each other. Since the pairs also include an equal amount of opposite charge compared to the original charge the average charge seen by an observer at a distance is smaller. When the distance to the charge increases the effective charge decreases until the coupling constant of QED reaches the fine-structure constant $\alpha=\frac{1}{137}$. 
+
+Contrary to QED, QCD is a non-abelian theory. In other words the generators of the symmetry group of QCD, SU(3), do not commute. This has the practical consequence that gluons, that have a colour charge, interact also with other gluons, whereas in QED the electrically neutral carrier particles, photons, only interact with charged particles.
+
+The colour charges in QCD lead to a similar screening effect as in QED, but QCD includes also antiscreening because the gluons can also interact with other gluons. In QCD the antiscreening effect is stronger than screening and in total colour charges are antiscreened. For larger distances to the colour charge the coupling constant is larger. This explains why no free colour charges can be observed. When the distance between charges increases the interaction grows until it is strong enough to produce a new quark-antiquark pair~\cite{Alkofer:2006fu}. 
+
+On the other hand for very small distances the coupling constant approaches 0. This is called asymptotic freedom. For large energies and small distances the coupling constant becomes negligible. In 1975 Collins\cite{Collins:1975} predicted a state where individual quarks and gluons are no longer confined into bound hadronic states. Instead they form a bulk QCD matter that Shuryak called Quark-Gluon plasma in his 1980 review of QCD and the theory of superdense matter~\cite{Shuryak:1980}. 
+
+Though QGP was predicted its properties are still obscure. Even with the final theory of QCD making testable predictions is extremely difficult. The traditional approach in quantum mechanics, perturbation theory, only works when the interaction is weak. In QCD this requires high energy or short distance interactions. Perturbative QCD (pQCD)~\cite{Collins:1989gx} can be used to calculate processes like the Drell ratio.
+
+Most of the processes can not be calculated directly with pQCD. For example the hadron structure is nonperturbative because of colour confinement. %Free quarks and gluons cannot be observed because the interactions in a hadron are too strong. 
+In proton-proton collision experiments one can use the QCD factorisation theorem, where cross-section is separated into two parts: short-distance parton cross section that can be calculated with pQCD and the universal long-distance functions which can be measured with global fits to experiments.
+
+For non-perturbative processes, like the ones present in QGP, one usually turns to Lattice QCD. It is a lattice gauge theory formulated on a discrete Euclidean space time grid. When the size of the lattice is taken infinitely large and its sites infinitesimally close to each other, the continuum QCD is recovered. Since no new parameters or field variables are introduced in this discretization, LQCD retains the fundamental character of QCD~\cite{Gupta:1997nd}. 
+
+Lattice QCD has provided the theoretical approximations about the temperature needed for QGP formation. The results from lattice calculation are shown in Fig.~\ref{fig:lattice}~\cite{Karsch:2001cy}. The transition from hadronic matter to QGP is sharp. Thus QGP can be seen as a separate state of matter. 
+
+\begin{figure}[htbp]
+\centering
+%\includegraphics[width=0.9\textwidth]{pics/qcd_ms_high}
+\includegraphics[width=0.9\textwidth]{pics/energy_nf_comp}
+\caption[Lattice QCD results]{Lattice QCD results~\cite{Karsch:2001cy} for the energy density / $T^4$ as a function of the temperature scaled by the critical temperature TC. Note the arrows on the right side indicating the values for the Stefan-Boltzmann limit.~\cite{Adcox:2004mh}}
+\label{fig:lattice}
+\end{figure}
+
+A schematic view of a phase diagram for QCD matter as a function of temperature and the baryochemical potential is shown in Fig. \ref{fig:QCDphase}. The baryochemical potential $\mu$ represents the imbalance between quarks and antiquarks. At zero temperature this corresponds to the number of quarks but at higher temperatures there are also additional pairs of quarks and antiquarks. At zero temperature with increasing $\mu$ the density is zero up to the onset transition where it jumps to nuclear density, and then rises with increasing $\mu$.  Neutron stars are in this region of the phase diagram, although it is not known whether their cores are dense enough to reach the quark matter phase. Along the vertical axis the temperature rises, taking us through the crossover from a hadronic gas to the quark-gluon plasma. This is the regime explored by high-energy heavy-ion colliders.
+
+\begin{figure}[htbp]
+\centering
+%\includegraphics[width=0.9\textwidth]{pics/qcd_ms_high}
+\includegraphics[width=0.5\textwidth]{pics/QCDphase2}
+\caption[QCD phase diagram]{A schematic outline for the phase diagram of QCD matter at ultra-high density and temperature.~\cite{Rajagopal:2001}}
+\label{fig:QCDphase}
+\end{figure}
+
+Lattice QCD predicts a phase transformation to a quark-gluon plasma at a temperature of approximately $T \approx 170 \;\mathrm{MeV} \approx 10^{12} \;\mathrm{K}$~\cite{Adcox:2004mh}.  This transition temperature corresponds to an energy density $\epsilon \approx 1\gev/\mathrm{fm^3}$, nearly an order of magnitude larger than that of normal nuclear matter. Thus producing QGP requires extreme conditions that existed in the early universe at the age of $10^{-6}\;\mathrm{s}$ after the Big Bang and are nowadays experimentally achievable in heavy-ion collisions. The study of QCD matter at high temperature is of fundamental and broad interest. The phase transition in QCD is the only phase transition in a quantum field theory that can be experimentally probed by any present or foreseeable technology. 
+
+
+
+ 
+
+
+
+\FloatBarrier
+\pagebreak
+\subsection{Heavy-Ion physics}
+ %The Quark Gluon Plasma (QGP) QCD matter, its properties and its phase transitions between hadronic matter and the quark-gluon plasma (QGP) can be explored in the laboratory, through collisions of heavy atomic nuclei at ultra-relativistic energies. 
+
+The Quark Gluon Plasma (QGP) is experimentally accessible by through collisions of heavy atomic nuclei at ultra-relativistic energies. Its properties and phase transitions between hadronic matter and QGP can be explored through heavy-ion physics. Because of the difficulties in theoretical approaches to QGP heavy-ion physics is a field driven by experimental evidence. Thus the development of heavy-ion physics is strongly connected to the development of particle colliders. 
+%Experimental study of relativistic heavy-ion collisions has been carried out for three decades, beginning with the Bevalac at Lawrence Berkeley National Laboratory (LBNL)~\cite{Lofgren_1975}, and continuing with the AGS at Brookhaven National Laboratory (BNL)~\cite{Barton:1987} and CERN SPS~\cite{Vitev:2002pf}. The first colliders could not produce enough energy to create QGP matter so they could only probe the hadronic state.  Nowadays research of Heavy-Collisions is mainly performed at two particle colliders; the The Relativistic Heavy Ion Collider (RHIC) at BNL in New York, USA and the Large Hadron Collider (LHC) at CERN in Switzerland. Energy densities at these colliders should be enough to produce QGP and convincing evidence of the creation has been seen at both colliders.
+
+%The collective motion of matter in a heavy-ion collision has been modeled using several models e.g. the Blast wave Model~\cite{PhysRevC.84.064905} has been used succesfully. Another model growing in popularity is the hydrodynamical approach which is further discussed in section \ref{sec:hydro}. 
+
+The first heavy-ion collisions were done at the Bevalac experiment at the Lawrence Berkeley National Laboratory~\cite{Lofgren_1975} and at the Joint Institute for Nuclear Research in Dubna~\cite{kovalenko1994status} at energies up to 1$\gev$ per nucleon.
+In 1986 the Super Proton Synchrotron (SPS) at CERN started to look for QGP signatures in O+Pb collisions. The center-of-mass energy per colliding nucleon pair $\left(\snn\right)$ was 19.4 GeV~\cite{Vitev:2002pf}. These experiments did not find any decisive evidence of the existence of QGP. In 1994 a heavier lead (Pb) beam was introduced for new experiments at $\snn\approx 17\; \gev$. At the same time the Alternating Gradient Synchrotron (AGS) at BNL, Brookhaven collided ions up to $\mathrm{^{32}S}$ with a fixed target at energies up to $28\gev$~\cite{Barton:1987}. Hints of QGP were already seen at SPS. Although the discovery of a new state of matter was reported at CERN, these experiments provided no conclusive evidence of QGP. Now SPS is used with 400 GeV proton beams for fixed-target experiments, such as the SPS Heavy Ion and Neutrino Experiment (SHINE)~\cite{Grebieszkow:2013nza}, which tries to search for the critical point of strongly interacting matter.
+
+The Relativistic Heavy Ion Collider (RHIC) at BNL in New York, USA started its  operation in 2000. The top center-of-mass energy per nucleon pair at RHIC, $200 \gev$, was reached in the following years. The results from the experiments at RHIC have provided a lot of convincing evidences that QGP was created~\cite{Adcox:2004mh, Adams:2005dq, Arsene:2004fa, Back:2004je}. 
+
+The newest addition to the group of accelerators capable of heavy-ion physics is the Large Hadron Collider (LHC) at CERN, Switzerland. LHC started operating in November 2009 with proton-proton collisions. First Pb-Pb heavy-ion runs started in November 2010 with $\snn=2.76\; \tev$, an energy that is over ten times higher than at RHIC. Among the six experiments at LHC, A Large Ion Collider Experiment (ALICE) is dedicated to heavy-ion physics. Also CMS and ATLAS have active heavy-ion programs. 
+
+The first indisputable evidence of QGP came from RHIC~\cite{Adcox:2004mh} measurements in 2004. Originally it was believed that QGP behaves as an ideal gas. The first hints against the ideal gas assumption came from Lattice QCD calculations~\cite{Karsch:2001cy} which showed that QGP approaches the Stefan-Boltzmann limit very slowly and the RHIC observations confirmed that QGP behaves more like a strongly interacting fluid. i.e. it has no or very little viscosity. This discovery strengthened the role of hydrodynamics~\cite{PhysRevD.27.140, Baym1983541, PhysRevD.34.794} as a way of describing collective (low $\pt{}$) phenomena in heavy-ion physics. I will discuss the hydrodynamical approach in section \ref{sec:hydro}. Another approaches into modelling heavy-ion collisions have been successful. In this thesis I will study A MultiPhase Transport (AMPT) model, which is a hybrid model. Unlike hydrodynamics the model treats particles and their interactions individually with the use of Monte Carlo simulations.
+
+ %Also other models has been used to model the collective motion of matter in a a heavy-ion collision has been used succesfully. In this thesis I will study the AMPT~\cite{Lin:2004en, Xu:2011fi} model, which is a hybrid model based mainly on Monte Carlo simulations.
+
+
+
+%Suggestion to here: remove "other models" and citation to BW. State simply that in this work you study AMPT model that has a MC implementation of microscopic description of all the stages of the evolution of the system from production of the particles into a gradual decoupling in hadron cascade, while the hydrodynamics is a thermal description from initial state, that hydro itself cannot provide, into the last scattering surface at the end of the hydrodynamical evolution. --- But you would need to formulate this somehow nicely.
+
+
+%\cite{PhysRevD.27.140, Baym1983541, PhysRevD.34.794}
+%343-346 (In the SPS era ->): I think that this is not 100 % correct. Somehow "ideal gas" contains an idea that constituents, i.e. partons in QGP, are weakly interacting. However, already pressure calculation from lattice QCD showed that Stephan-Boltzmann limit is approach very very slowly and the deviation is significant in region where heavy ion collisions. This already was a hint that the plasma is something else than ideal gas and studies at RHIC have found more evidence that it would be more a strongly interacting liqued than weakly interacting gas. However, ideal in a sense that the viscosity is low. 
+
+%Also, the hydrodynamical simulations very done routinely already at SPS, and I have a feeling that already in Bevalac. Landau used hydrodynamics for p+p collisions at 1950's! So, hydro is not a new thing. So definitely you cannot hint that hydro was something that was born in studies at SPS or RHIC. Hence I would write something like:
+
+%One traditional way to describe collective (low-pT) phenomena in heavy ion collisions is relativistic hydrodynamics~\cite{PhysRevD.27.140, Baym1983541, PhysRevD.34.794}.
+
+%Bjorken made it for boost-invariant longitudinal expantion and infinite transverse size. The later papers a significant step in HI physics since they included finite transverse size and followed by that, a dynamically generated transverse flow. So these papers are behind the hydro flow analysis in HI! (Note also the Jyväskylä contribution to the field also in here.)
+
+%The ideal liquid approximation works relatively well, but for a more realistic description one has to include also viscous effects. The addition of viscosity originated surprisingly from string theory.
+
+QGP has also provided string theorists a long sought-after method to test dynamics of strongly-coupled gauge theory~\cite{Peeters:2007ab}, since it seems that the viscosity of the QGP is very small and might be very close to a lower bound of shear viscosity to entropy ratio $\eta/s$ suggested by string theoretical calculations\footnote{One should note that finite minimal viscosity was discussed by Gyulassy and Danielewicz already in 1980's~\cite{PhysRevD.31.53}, a long before any string theoretical calculations.}. According to the calculations $\eta/s$, has an universal minimum value of $\hbar/4\pi k_B$~\cite{kovtun:2004de}. This universal minimum value of $\nicefrac{1}{4\pi}\approx 0.08$, would hold for all substances. According to the theory the limit could be reached in the strong coupling limit of gauge theories and the limit in QCD is QGP.
+
+%From the anti-de Sitter space duality it can be shown that the shear viscosity to entropy ratio, 
+
+%There are several well-known signs of strings in gauge theories, but a concrete realisation of the connection only became available with Maldacena’s conjecture of the correspondence between Anti-de-Sitter Space and Conformal Field Theory (AdS/CFT correspondence)~\cite{Maldacena:1997re}. %QCD is strictly speaking not conformal, i.e. not scale invariant. 
+%The crucial new ingredient was that strings dual to gauge fields require additional dimensions. 
+%
+%In the best-understood form of the AdS/CFT correspondence the curved string space-time is five-dimensional Anti-de-Sitter space times a five-sphere $\mathrm{AdS_5}\times S^5$ and dual gauge theory lives on its boundary. In this space with coordinates $t$, $x^1$, $x^2$, $x^3$, $z$ the metric becomes 
+%
+%\begin{eqnarray}
+%\dd s^2&=&\frac{\mathcal{L}}{z^2}\left(-\dd t^2+\dd x^2+\dd z^2\right)
+%% & = & \frac{r^2}{\mathcal{L}}\left(-dt^2+dx^2\right)+\frac{\mathcal{L}}{r^2}dr^2,
+%\end{eqnarray}
+%
+%\noindent where the $x$ and $t$ co-ordinates are the traditional 4-space co-ordinates  and the coordinate $z$ is the coordinate perpendicular to our four dimensional world. The surface $z=0$ represents the boundary, where traditional gauge theory lives. Additionally a distance scale $\mathcal{L}$ has entered~\cite{Kim:2002uz}. QCD is not scale-invariant like the conformal field theory that was used in the AdS/CFT correspondence. A schematic representation of the correspondence between the Anti-de-Sitter space and our four dimensional space-time is shown in Fig.~\ref{fig:string}.
+%
+%\begin{figure}
+%\begin{subfigure}[t]{0.4\textwidth}
+%\includegraphics[width=\textwidth]{pics/adscft}
+%\caption{Conformal \\
+%\small anti de-Sitter}
+%\end{subfigure}
+%\begin{subfigure}[t]{0.2\textwidth}
+%\includegraphics[width=\textwidth]{pics/confining}
+%\caption{Confining \\
+%\small extra scale}
+%\end{subfigure}
+%\begin{subfigure}[t]{0.2\textwidth}
+%\includegraphics[width=\textwidth]{pics/blackhole}
+%\caption{Thermal \\
+%\small Hawking-radiating black hole}
+%\end{subfigure}
+%\caption[AdS/CFT correspondence]{Symbolic depiction of the basic idea of the AdS/CFT correspondence: the string theory dual to gauge theory is higher-dimensional. The string lives in a curved space-time, and there is a specific map which relates the physics of the string to the physics in our four-dimensional world. More recent extensions of this conjecture have produced string geometries dual to confining and thermal theories (right).~\cite{Peeters:2007ab}}
+%\label{fig:string}
+%\end{figure}
+
+
+
+The ratio $\eta/s$ of QGP can not be directly measured but it can be estimated with data from heavy-ion collisions. Comparing hydrodynamical calculations with different $\eta/s$ values to experimental data gives an estimate of the $\eta/s$ in the system. The minimum value of $\eta/s$ is found in the vicinity of the critical temperature, $T_c$~\cite{PhysRevLett.98.092301}. Finding the $\eta/s$ values in QGP matter would therefore also provide a way of determining the critical point of QCD matter~\cite{PhysRevLett.98.092301}. At RHIC~\cite{PhysRevLett.98.092301} the ratio has been constructed from $v_2$ measurements. The estimated ratio in QGP and temperature dependance of the ratio in different substances is shown in Fig.\ref{fig:etas}. 
+
+The $\eta/s$ value for the matter created in Au-Au collisions at RHIC ($\snn=200\gev$)  has been estimated to be $0.09\pm0.015$~\cite{PhysRevLett.98.092301}, which is very close to the predicted lowest value. % for a wide class of thermal quantum field theories~\cite{Kovtun:2004de} for all relativistic quantum field theories at finite temperature and zero chemical potential. 
+This suggests that the the matter created goes through a phase where it is close to the critical point of QCD.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{pics/eta-s-vs-t-tc3}
+\caption[$\eta/s$ as a function of $(T-T_c)/T_c$]{\label{fig3}$\eta/s$ as a function of $(T-T_c)/T_c$ for several substances as indicated.
+	The calculated values for the meson-gas have an associated error 
+	of $\sim$ 50\% %~\cite{Chen:2006ig}. 
+	The lattice QCD value $T_c = 170$~MeV %~\cite{Karsch:2000kv} 
+	is assumed for nuclear matter. The lines are drawn to guide the eye.~\cite{PhysRevLett.98.092301}
+}
+\label{fig:etas}
+
+\end{figure}
+
+
+
+
+
+%\begin{figure}[t]
+%\begin{center}
+%\hbox{\vbox{\hbox{\includegraphics[width=.4\textwidth]{cfigs/adscft.eps}}\hbox{\hspace{10em}conformal}\hbox{\hspace{10em}\smaller
+%    anti de-Sitter}}\hspace{4em}
+%\vbox{\hbox{\includegraphics[width=.2\textwidth]{cfigs/confining.eps}}\hbox{~~~~~~~~confining}\hbox{\smaller
+%      ~~~~~extra scale (``wall'')}}\hspace{1em}
+%\vbox{\hbox{\includegraphics[width=.2\textwidth]{cfigs/blackhole.eps}}\hbox{~~~~~~~~~thermal}\hbox{~~\smaller Hawking-radiating
+%    black hole}}}
+%\end{center}
+%\caption{Symbolic depiction of the basic idea of the AdS/CFT
+%  correspondence: the string theory dual to gauge theory is
+%  higher-dimensional. The string lives in a curved space-time, and
+%  there is a specific map which relates the physics of the string to
+%  the physics in our four-dimensional world. More recent extensions of
+%  this conjecture have produced string geometries dual to confining
+%  and thermal theories (right).~\cite{Peeters:2007ab}\label{f:symbolic}}
+%\end{figure}
+
+
+%One important property of the QGP is the shear viscosity to entropy ratio, $\eta/s$. 
+
+
+\pagebreak
+\FloatBarrier
+\pagebreak
+\section{Features of Heavy-Ion Collisions}
+\label{sec:features}
+\subsection{Collision Geometry}
+In contrast to protons atomic nuclei are objects with considerable transverse size. The properties of a heavy-ion collision depend strongly on the impact parameter $b$ which is the vector connecting the centers of the two colliding nuclei at their closest approach. One illustration of a heavy-ion collision is shown in Fig.~\ref{fig:planes}.
+
+
+Impact parameter defines the reaction plane which is the plane spanned by $b$ and the beam direction. $\Psi_{RP}$ gives the angle between the reaction plane and some reference frame angle. Experimentally the reference frame is fixed by the detector setup. Reaction plane angle cannot be directly measured in high energy nuclear collisions, but it can be estimated with the event plane method~\cite{Voloshin:2008dg}. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.6\textwidth]{pics/Definitions}
+\caption[The definitions of the Reaction Plane and Participant Plane coordinate systems]{The definitions of the Reaction Plane and Participant Plane coordinate systems~\cite{Voloshin:2007pc}. The dashed circles represent the two colliding nuclei and the green dots are partons that take part  in the collision. $x_{PP}$ and $x_{RP}$ are the participant and reaction planes. The angle between $x_{RP}$ and $x_{PP}$ is given by Eq. (\ref{eq:partangle}). $y_{PP}$ and $y_{RP}$ are lines perpendicular to the participant and reaction planes. }
+\label{fig:planes}
+\end{figure}
+
+
+%The constituents in the nucleus have a quantum character and are situated in a potential well. 
+%Nucleus density
+%This causes fluctuations in the initial geometry of the overlapping region. 
+Participant zone is the area containing the participants. The distribution of nucleons in the nucleus exhibits time-dependent fluctuations. Because the nucleon distribution at the time of the collision defines the participant zone, the axis of the participant zone fluctuates and can deviate from the reaction plane. The angle between the participant plane and the reaction plane is defined by ~\cite{Holopainen:2010gz}
+
+\begin{equation}
+\psi_{PP}=\arctan \frac{-2\sigma_{xy}}{\sigma_y^2-\sigma_x^2+\sqrt{\left(\sigma_y^2-\sigma_x^2\right)^2+4\sigma_{xy}^2}},
+\label{eq:partangle}
+\end{equation}
+
+\noindent where the $\sigma$-terms are averaged over the energy density.
+
+\begin{equation}
+\sigma_y^2=\langle y^2\rangle-\langle y \rangle ^2, \sigma_x^2=\langle x^2\rangle-\langle x \rangle ^2, \sigma_{xy}=\langle xy \rangle - \langle x \rangle \langle y \rangle
+\end{equation}
+
+The impact parameter is one way to quantize the centrality of a heavy-ion collision but it is impossible to measure in a collision. It can be estimated from observed data using theoretical models, but this is always model-dependent and to compare results from different experiments one needs an universal definition for centrality. The difference between central and peripheral collisions is illustrated in Fig.~\ref{fig:collisionA}. In a central collision the overlap region is larger than in a peripheral collision. Larger overlap region translates into a larger number of nucleons participating in the collision, which in turn leads to a larger number of particles produced in the event.
+
+
+\begin{figure}[h!]
+\centering
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+            	\includegraphics[height=1in]{pics/Collisionperipheral}
+                \caption{Peripheral collision}
+                \label{fig:peripheral}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+               \includegraphics[height=1in]{pics/Collisioncentral}
+                \caption{Central collision}
+                \label{fig:central}
+        \end{subfigure}
+        \caption[Interaction between partons in central and peripheral collisions.]{Interaction between partons in central and peripheral collisions. The snowflakes represent elementary parton-parton collisions. When the impact parameter $b$ is large the number of elementary collisions is small. Particle production is small. Smaller impact parameter increases the number of elementary collisions. This increases  particle production.}\label{fig:collisionA}
+\end{figure}
+
+Usually centrality is defined by dividing collision events into percentile bins by the number participants or experimentally by the observed multiplicity. Centrality bin 0-5\% corresponds to the most central collisions with the highest multiplicity and higher centrality percentages correspond to more peripheral collisions with lower multiplicities. A multiplicity distribution from ALICE measurements~\cite{PhysRevC.88.044909} illustrating the centrality division is shown in Fig.~\ref{fig:centrality}. The distribution is fitted using a phenomenological approach based on a Glauber Monte Carlo~\cite{Miller:2007ri} plus a convolution of a model for the particle production and a negative binomial distribution. 
+
+
+\begin{figure}[htb]
+\centering
+
+               \includegraphics[width=0.9\textwidth]{pics/centrality}
+        \caption[An illustration of the multiplicity distribution in ALICE measurement with centrality classes.]{An illustration of the multiplicity distribution in ALICE measurements. The red line shows
+the fit of the Glauber calculation to the measurement. The data is divided into centrality bins~\cite{PhysRevC.88.044909}. The size of the bins corresponds to the indicated percentile.}
+        	\label{fig:centrality}
+\end{figure}
+
+%Each centrality bin is obtained by taking the indicated percentile of events arranged by the observed multiplicity. 
+%Centrality bin 0-5\% corresponds to the most central collisions. It includes the 5\% of the events  with highest multiplicity. Centralities 90-100\% correspond to the most peripheral collisions. 
+
+
+\subsubsection{Nuclear Geometry}
+\label{sec:glauber}
+To model heavy-ion collisions one must first have a description as good as possible of the colliding objects. Atomic nuclei are complex ensembles of nucleons. The nuclei used in heavy-ion physics have in the order of 200 nucleons. Mostly used nuclei are $\mathrm{^{208}Pb}$ at LHC and $\mathrm{^{197}Au}$ at RHIC. The distribution of these nucleons within a nucleus is not uniform and is subject to fluctuations in time.
+
+Nuclear geometry in heavy-ion collisions is often modelled with the Glauber Model. The model was originally developed to address the problem of high energy scattering with composite particles. Glauber presented his first collection of papers and unpublished work in his 1958 lectures~\cite{Glauber:1959}. In the 1970's Glauber's work started to have utility in describing total cross sections. Maximon and Czyz applied it to proton-nucleus and nucleus-nucleus collisions in 1969~\cite{Czyz:1969}. 
+
+In 1976 ~\cite{Biallas1976461} Białłas, Bleszyński, and Czyż applied Glauber's approach to inelastic nuclear collisions. Their approach introduced the basic functions used in modern language including the thickness function and the nuclear overlap function. Thickness function is the integral of the nuclear density over a line going through the nucleus with minimum distance $s$ from its center
+
+\begin{equation}
+T_A\left(s\right)=\int_{-\infty}^{\infty}\dd z \rho\left(\sqrt{s^2+z^2}\right).
+\end{equation}
+
+\noindent This function gives the thickness of the nucleus, i.e. the amount material seen by a particle passing through it. 
+
+Overlap function is an integral of the thickness functions of two colliding nuclei over the overlap area. This can be seen as the material that takes part in the collision. It is given as a function of the impact parameter $b$
+
+\begin{equation}
+T_{AB}\left(b\right)=\int \dd  s^2 T_A\left(\bar s\right) T_B\left(\bar s - \bar b\right)
+\end{equation}
+
+\noindent The average overlap function, $\left<T_{AA}\right>$, in an A-A collisions  is given by~\cite{Afanasiev:2009aa}
+
+\begin{equation}
+\left<T_{AA}\right>=\frac{\int T_{AA}\left(b\right) \dd b}
+{\int\left(1-e^{-\sigma^{inel}_{pp}T_{AA}\left(b\right)}\right)\dd b}.
+\end{equation}
+
+\noindent Using $\left<T_{AA}\right>$ one can calculate the mean number of binary collisions
+
+\begin{equation}
+\left<N_{coll}\right>=\sigma_{pp}^{inel}\left<T_{AA}\right>,
+\end{equation}
+
+\noindent where the total inelastic cross-section, $\sigma_{pp}^{inel}$, gives the probability of two nucleons interacting. The number of binary collisions is related to the hard processes in a heavy-ion collision. Each binary collision has equal probability for direct production of high-momentum partons. Thus the number of high momentum particles is proportional to $\left<N_{coll}\right>$.
+
+Soft production on the other hand is related to the number of participants. It is assumed that in the binary interactions participants get excited and further interactions are not affected by previous interactions because the time scales are too short for any reaction to happen in the nucleons. After the interactions excited nucleons are transformed into soft particle production. Production does not depend on the number of interactions a nucleon has gone through. The average number of participants, $\left<N_{part}\right>$ can also be calculated from the Glauber model 
+
+
+\begin{eqnarray}
+\left<N_{part}^{AB}\left(b\right)\right>&=&\int \dd  s^2 T_A\left(\bar s\right)\left[1-\left[1-\sigma_{NN}\frac{T_B\left(\bar s - \bar b\right)}{B}\right]^B\right] \nonumber \\
+ &+ &\int \dd s^2 T_B\left(\bar s\right)\left[1-\left[1-\sigma_{NN}\frac{T_A\left(\bar s - \bar b\right)}{A}\right]^A\right].
+\end{eqnarray}
+
+%
+%
+%
+%
+%The mean number of binary nucleon collisions can be calculated from the average thickness function 
+%
+%\begin{equation}
+%\left<N_{coll}\right>=\sigma_{pp}^{inel}\left<T_{AA}\right>
+%\end{equation}
+%
+%where $\left<T_{AA}\right>$ is the mean Glauber overlap function for the centrality being analysed 
+%
+%\begin{equation}
+%\left<T_{AA}\right>=\frac{\int T_{AA}\left(b\right)}{\int\left(1-e^{-\sigma^{inel}_{pp}T_{AA}\left(b\right)}\right)db}.
+%\end{equation}
+%
+%
+%
+%Number of participants is related to the bulk production / soft production. 
+%
+
+
+Glauber calculations require some knowledge of the properties of the nuclei. One requirement is the nucleon density distribution, which can be experimentally determined by studying the nuclear charge distribution in low-energy electron scattering experiments~\cite{Miller:2007ri}.  The nucleon density is usually parametrized by a Woods-Saxon  distribution
+
+%\begin{equation}
+%\rho\left(r\right)=\rho_0 \frac{1+w\left(\frac{r}{R}\right)^2}{1+\exp{\left(\frac{r-R}{a}\right)}}
+%,\end{equation}
+%
+\begin{equation}
+\rho\left(r\right)=\frac{\rho_0}{1+\exp{\left(\frac{r-R}{a}\right)}}
+,\end{equation}
+
+\noindent where $\rho_0$ is the nucleon density in center of the nucleus, $R$ is the nuclear radius and $a$ parametrizes the depth of the skin. The density stays relatively constant as a function of $r$ until around $R$ where it drops to almost 0 within a distance given by $a$.
+
+Another observable required in the calculations is the total inelastic nucleon-nucleon cross-section $\sigma\mathrm{^{NN}_{inel}}$.  This can be measured in proton-proton collisions at different energies.
+
+There are two often used approaches to Glauber calculations. The optical approximation is one way to get simple analytical expressions for the nucleus-nucleus interaction cross-section, the number of interacting  nucleons and the number of nucleon-nucleon collisions. In the optical Glauber it is assumed that during the crossing of the nuclei the nucleons move independently and they will be essentially undeflected.  
+
+With the increase of computational power at hand the Glauber Monte Carlo (GMC) approach has emerged as a method to get a more realistic description of the collisions. In GMC the nucleons are distributed randomly in three-dimensional coordinate system according to the nuclear density distributions. Also nuclear parameters, like the radius $R$ can be sampled from a distribution. A heavy-ion collision is then treated as a series of independent nucleon-nucleon collisions, where in the simplest model nucleons interact if their distance  in the plane orthogonal to the beam axis, $d$, satisfies
+
+\begin{equation}
+d< \sqrt{\sigma\mathrm{^{NN}_{inel}}}
+\end{equation}
+
+\noindent The average number of participants and binary collisions can then be determined by simulating many nucleus-nucleus collisions. The results of one GMC Pb-Pb event with impact parameter $b=9.8\mathrm{fm}$ is shown in Fig.~\ref{fig:GMC}
+
+\begin{figure}[htbp]
+\centering
+               \includegraphics[width=0.5\textwidth]{pics/glauber_eli}
+        \caption[The results of one Glauber Monte Carlo simulation.]{The results of one Glauber Monte Carlo simulation. Big circles with black dotted boundaries represent the two colliding nuclei. The participant zone is highlighted with the solid red line.        
+        Small red and blue circles represent nucleons. Circles with thick boundaries are participants i.e. they interact with at least one nucleon from the other nucleus. Small circles with dotted boundaries are spectators which do not take part in the collision.}
+        	\label{fig:GMC}
+\end{figure}
+
+
+
+\subsection{Hydrodynamical Modelling}
+\label{sec:hydro}
+The relativistic version of hydrodynamics has been used to model the deconfined phase of a heavy-ion collision with success. Heavy-ion collisions produce many hadrons going into all directions. It is expected that tools from statistical physics would be applicable to this complexity~\cite{Ollitrault:2007du}. The power of relativistic hydrodynamics lies in its simplicity and generality. Hydrodynamics only requires that there is local thermal equilibrium in the system. In order to reach thermal equilibrium the system must be strongly coupled so that the mean free path is shorter than the length scales of interest~\cite{Romatschke:2009im}.
+
+The use of relativistic hydrodynamics in high-energy physics dates back to Landau~\cite{Landau:1953gs} and the 1950's, before QCD was discovered. Back then it was used in proton-proton collisions. Development of hydrodynamics for the use of heavy-ion physics has been active since the 1980's, including Bjorken's study of boost-invariant longitudinal expansion and infinite transverse flow~\cite{PhysRevD.27.140}. Major steps were taken later with the inclusion of finite size and and dynamically generated transverse size~\cite{Baym1983541, PhysRevD.34.794}, a part of which was done at the University of Jyväskylä. The role of hydrodynamics in heavy-ion physics was strengthened when QGP was observed to behave like a liquid by RHIC~\cite{Adcox:2004mh}. 
+
+The evolution of a heavy-ion event can be divided into four stages. A schematic representation of the evolution of the collisions is shown in Fig.~\ref{fig:HISpaceTime}. Stage 1 follows immediately the collision. This is known as the pre-equilibrium stage. Hydrodynamic description is not applicable to this regime because thermal equilibrium is not yet reached. The length of this stage is not known but it is assumed to last about $1\ \mathrm{fm}/c$ in proper time $\tau$. 
+
+\begin{figure}[htb]
+\centering
+               \includegraphics[width=0.5\textwidth]{pics/HISpaceTime2}
+        \caption[Schematic representation of a heavy-ion collision]{Schematic representation~\cite{Romatschke:2009im} of a heavy-ion collision as the function of time and longitudinal coordinates $z$ The various stages of the evolution correspond to proper time $\tau=\sqrt{t^2-z^2}$ which is shown as hyperbolic curves separating the different stages.}
+        	\label{fig:HISpaceTime}
+\end{figure}
+
+The second stage is the regime where thermal equilibrium or at least near-equilibrium is reached. In this stage hydrodynamics should be applicable if the temperature is above the deconfinement temperature~\cite{Romatschke:2009im}. This lasts about $5-10\ \mathrm{fm}/c$ until the temperature of the system sinks low enough for hadronization to occur. Now the system loses its deconfined, strongly coupled, state and hydrodynamics can no longer be used. The third stage is the hadron gas stage where the hadrons still interact. This ends when hadron scattering becomes rare and they no longer interact. In the final stage hadrons are free streaming and they fly in straight lines until they reach the detector.
+
+%The hydrodynamical approach uses. Mass density is not a well defined quantity since pair production and annihilation of quark-antiquark pairs constantly modifies the mass of the system. Instead energy density is used. 
+
+The hydrodynamical approach treats the ensemble of particles as a fluid. It uses  basic equations from hydrodynamics and thermodynamics but with a few modifications to account for the relativistic energies. The calculation is based on a collection of differential equations connecting the local thermal variables like temperature, pressure etc. to local velocities of the fluid. One also needs equations of state that connect the properties of the matter, e.g. temperature and pressure to density.  Given initial conditions and equations of state the calculation gives the time-evolution of the system.
+
+At first only ideal hydrodynamics was used. Ideal hydrodynamics does not include viscosity but it is a relatively good approximation and it could predict phenomena like elliptic flow. For more detailed calculations also viscosity must be considered and viscosity itself is an interesting property of QGP.
+
+In this thesis I compare my results of identified particle flow to calculations from two hydrodynamical models; VISHNU model by Song \emph{et al.}~\cite{Song:2013qma} and calculations by Niemi \emph{et al.}~\cite{Niemi:2012ry}.
+
+
+\FloatBarrier
+\pagebreak
+\subsection{Flow}
+In a heavy-ion collision the bulk particle production is known as flow. The production is mainly isotropic but a lot of studies including my thesis focus on the small anisotropies. After the formation of the QGP, the matter begins to expand as it is driven outwards by the strong pressure difference between the center of the collision zone and the vacuum outside the collision volume. The pressure-driven expansion is transformed into flow of low-momentum particles in the hadronization phase. Since the expansion is mainly isotropic the resulting particle flow is isotropic with small anisotropic corrections that are of the order of $10\%$ at most. The isotropic part of flow is referred to as radial flow. 
+
+\begin{figure}[b!]
+\centering
+\includegraphics[width=0.6\textwidth]{pics/pT_PbPb}
+\caption[Charged particle spectra]{ Charged particle spectra measured by ALICE~\cite{PRL106032301} for the 9 centrality classes given in the legend. The distributions are offset by arbitrary factors given in the legend for clarity. The distributions are offset by arbitrary factors given in the legend for clarity. The dashed lines show the proton-proton reference spectra scaled by the nuclear overlap function determined for each centrality class and by the Pb-Pb spectra scaling factors~\cite{PRL106032301}.}
+\label{fig:dndpt}
+\end{figure}
+
+The transverse momentum spectra $\dd N/\dd {\pt{}}$ in heavy-ion collisions is shown in Fig. \ref{fig:dndpt}. The vast majority of produced particles have small $\pt{}$. The difference between the yield of $1\gevc$ and $4\gevc$ particles is already 2-3 orders of magnitude. Any observables that are integrated over $\pt{}$ are therefore dominated by the small momentum particles.
+
+
+
+
+\subsubsection{Anisotropic Flow}
+In a non-central heavy-ion collision the shape of the impact zone is almond-like. In peripheral collisions the impact parameter is large which means a strongly asymmetric overlap region.  In a central collision the overlap region is almost symmetric in the transverse plane. In this case the impact parameter is small. Collisions with different impact parameters are shown in Fig.~\ref{fig:collisionA}.
+
+\begin{figure}[b!]
+\centering
+        \begin{subfigure}[b]{0.52\textwidth}
+                \centering
+            	\includegraphics[height=2.4in]{pics/InteractionB}
+                \caption{Peripheral collision}
+                \label{fig:InteractionB}
+        \end{subfigure}
+        \begin{subfigure}[b]{0.45\textwidth}
+                \centering
+               \includegraphics[height=2.4in]{pics/InteractionA}
+                \caption{Central collision}
+                \label{fig:InteractionA}
+        \end{subfigure}
+	\caption[Illustration of flow in momentum space in central and peripheral collisions.]{Illustration of flow in momentum space in central and peripheral collisions. The density of the arrows represent the magnitude of flow seen at a large distance from the collision in the corresponding azimuthal direction. In a peripheral collision momentum flow into in-plane direction is strong and flow into out-of-plane direction is weak. In a central collision anisotropy in flow is smaller, but the total yield of particles is larger.}
+	\label{fig:flow}
+\end{figure}
+
+The pressure gradient is largest in-plane, in the direction of the impact parameter $b$, where the distance from high pressure, at the collision center, to low pressure, outside the overlap zone, is smallest. This leads to stronger collective flow into in-plane direction, which in turn results in enhanced thermal emission through a larger effective temperature into this direction, as compared to out-of-plane~\cite{Ollitrault:1992,Ollitrault:1993, Heinz:2002}. The resulting flow is illustrated in Fig.~\ref{fig:flow}. Flow with two maxima in the direction of the reaction plane is called elliptic flow. This is the dominant part of anisotropic flow. Also more complex flow patterns can be identified. The most notable of these is the triangular flow, which is mainly due to fluctuations in the initial conditions.
+
+Flow is nowadays usually quantified in the form of a Fourier composition 
+
+\begin{equation}
+E\frac{\dd{^3N}}{\dd {p^3}}=\frac{1}{2\pi}\frac{\dd {^2N}}{\pt{ }\dd {\pt{ }}\dd {\eta} } \left(1+\sum_{n=1}^{\infty}2v_n\left(\pt{},\eta\right)\cos(n(\phi-\Psi_n))\right),
+%\label{eq:finalseries}
+\end{equation}
+
+\noindent where the coefficients $v_n$ give the relative strengths of different anisotropic flow components and the overall normalisation gives the strength of radial flow. Elliptic flow is represented by $v_2$ and $v_3$ represents triangular flow. The first coefficient, $v_1$, is connected to directed flow. This will however in total be zero because of momentum conservation. It can be nonzero in some rapidity or momentum regions but it must be canceled by other regions.
+
+The first approaches to quantifying the anisotropy of flow did not use the Fourier composition. Instead they approached the problem with a classic event shape analysis using directivity~\cite{danielewicz:1985} or sphericity~\cite{Ollitrault:1992, Danielewicz:1983283} to quantify the flow.
+
+
+%The first one to predict anisotropic flow in heavy-ion collisions was Ollitrault in 1992~\cite{Ollitrault:1992}. The first papers on anisotropy did not discuss the Fourier composition. Instead they approached the problem with an classic event shape analysis. (sphericity)
+
+The first experimental studies of anisotropy were performed at the AGS~\cite{PhysRevLett.70.1393} in 1993. They noted that the anisotropy of particle production in one region correlates with the reaction plane angle defined in another region. 
+
+The first ones to present the Fourier decomposition were Voloshin and Zhang in 1996~\cite{Voloshin:1994mz}. This new approach was useful for detecting different types of anisotropy in flow, since the different Fourier coefficients give different harmonics in flow. They also show the relative magnitude of each harmonic compared to radial flow.
+
+Some parts of the Fourier composition approach were used for Au-Au collisions at $\snn=11.4\gev$ at AGS in 1994~\cite{Barrette:1994xr}. This analysis still focused on event shapes but they constructed these shapes using Fourier composition from different rapidity windows.
+
+
+\FloatBarrier
+
+\subsubsection{High $\pt{}$ Phenomena}
+The measurement of anisotropic flow coefficients can be extended to very high transverse momenta $\pt{}$. High $\pt{}$ measurements of $v_2$ from CMS~\cite{Chatrchyan:2012xq} are shown in Fig. \ref{fig:highpt}. For high transverse momenta $v_2$ values are positive and they decrease slowly as a function of $\pt{}$. At high transverse momentum the $v_2$ values don't, however, represent flow. 
+
+High momentum particles are very rare and they are only produced in the initial collisions. After they are created they escape the medium before a thermal equilibrium is reached. Thus they are not part of the pressure-driven collective expansion. Instead high momentum yield is suppressed because of energy loss in the medium. When propagating through the medium these partons lose energy as they pass through the medium. This is referred to as jet quenching. Jet quenching depends on the path lengths through the medium. Thus anisotropy in this region is mainly dependent on the collision geometry and density of medium.
+
+\begin{figure}
+\centering
+\includegraphics[width=0.9\textwidth]{pics/highptv2}
+\caption[Elliptic flow, $v_2$ from $\pt{}=1$ to $60\gevc$]{ Elliptic flow, $v_2$, as a function of the charged particle transverse momentum from $1$ to $60\gevc$ with $\left|\eta\right|<1$ for six centrality ranges in Pb-Pb collisions at $\snn=2.76\tev$, measured by the CMS experiment.~\cite{Chatrchyan:2012xq}. }
+\label{fig:highpt}
+\end{figure}
+
+
+The energy loss of partons in medium is mainly due to QCD bremsstrahlung and to elastic scatterings between the parton and the medium. 
+
+In elastic scatterings the recoil energy of the scattered partons are absorbed by the thermal medium, which reduces the energy of the initial parton. The mean energy loss from elastic scatterings can be estimated by
+
+\begin{equation}
+\left<\Delta E\right>_{el}=\sigma \rho L \left<E\right>_{1 scatt}\propto L,
+\end{equation}
+
+\noindent where $\sigma$ is the interaction cross section and $\left<E\right>_{1 scatt}$ is the mean energy transfer of one individual scattering~\cite{Majumder:2010qh}.
+
+Another energy loss mechanism is medium-induced radiation. In QCD this radiation is mainly due to the elementary splitting processes, $q\rightarrow qg_r$ and $g\rightarrow gg_r$. Assuming that the parton is moving with the speed of light radiation energy loss can be estimated by
+
+\begin{equation}
+\left<\Delta E\right>_{rad}\propto T^3L^2,
+\end{equation}
+
+\noindent where $L$ is the length of the medium and $T$ is its temperature~\cite{Dominguez:2008vd}.
+
+
+%\subsubsection*{Different models}
+There are several models that attempt to describe the nature of the energy loss mechanism. The most used models can be divided into four formalisms.
+%
+%\begin{itemize}
+%\item Thermal effective theory formulation (AMY)~\cite{Arnold:2001ms, Arnold:2002ja}
+%\item Opacity Expansion ((D)GLV/WHDG and ASW-SH)~\cite{Salgado:2003gb, Gyulassy:2000er, Gyulassy:1999zd, Wiedemann:2000za} 
+%\item Higher Twist approach~\cite{Wang:2001ifa, Majumder:2009zu} 
+%\item Multiple soft scattering approximation BDMPS-Z (ASW-MS)~\cite{Baier:1996kr, Zakharov:1996fv, Baier:1998kq, Salgado:2003gb}
+%\end{itemize}
+
+In the Gyulassy-Levai-Vitev (GLV)~\cite{Gyulassy:1999zd} opacity expansion model
+ the radiative energy loss is consiered on a few scattering centers $N_{scatt}$. The radiated gluon is constructed by pQCD calculation as summing up the relevant scattering amplitudes in terms of the number of scatterings. Another approach into opacity expansion is the ASW model by Armesto, Salgado and Wiedermann~\cite{Wiedemann:2000za}.
+
+Thermal effective theory formulation by Arnold, Moore and Yaffe (AMY)~\cite{Arnold:2001ms} uses dynamical scattering centers. It is based on leading order pQCD hard thermal loop effective field theory. This model assumes that because of the high temperature of the plasma the strong coupling constant can be treated as small. The parton propagating through the medium will lose energy from soft scatterings and hard scatterings.
+
+The above models calculate the energy loss while the parton propagates through the medium, focusing on the pQCD part. The higher twist (HT) approach by Wang and Guo~\cite{Wang:2001ifa} implements the energy loss mechanism in the energy scale evolution of the fragmentation functions.
+
+The last category is formed by the Monte Carlo methods. The PYTHIA event generator~\cite{pythia} is widely used in high-energy particle physics. Two Monte Carlo models based on PYTHIA describing the energy loss mechanism are PYQUEN~\cite{Lokhtin:2005px} and Q-Pythia~\cite{Armesto:2009zc}. Other Monte Carlo models include JEWEL~\cite{Zapp:2008gi} and YaJEM~\cite{Renk:2009nz}.
+
+Jet quenching in heavy-ion collisions is usually quantized with the nuclear modification factor $R_{AA}$, which is  is defined as
+%the yield in heavy-ion collisions divided by the yield in proton-proton collisions and scaled by the The nuclear modification factor
+
+\begin{equation}
+R_{AA}\left(\pt{}\right) = \frac{(1/N_{AA}^{evt})\dd {N^{AA}}/\dd {\pt{}}}{\left< N_{coll}\right> (1/N_{pp}^{evt})\dd {N^{pp}}/\dd {\pt{}}}\label{eq:raa}
+\end{equation}
+\noindent where $\dd{N^{AA}}/\dd{\pt{}}$ and $\dd{N^{pp}}/\dd{\pt{}}$ are the yields in heavy-ion and proton-proton collisions, respectively and $\left< N_{coll}\right>$ is the average number of binary nucleon-nucleon collisions in one heavy-ion event. The number of binary collisions can be calculated from the Glauber model as shown in Sec.~\ref{sec:glauber}. From the point of view of direct production a heavy-ion collision can be estimated relatively well to be only a series of proton-proton collisions. 
+
+If the medium has no effect on high $\pt{}$ particles the nuclear modification factor should be 1. At RHIC and LHC this has been observed to be as low as 0.2 because of jet quenching. Measurements of $R_{AA}$ from different sources are shown in Fig.~\ref{fig:Raa}
+
+\begin{figure}[hbt]
+	\centering
+                \includegraphics[width=0.65\textwidth]{pics/Raaplot}
+        \caption[Measurements of the nuclear modification factor $R_{AA}$ in central heavy-ion collisions]{Measurements of the nuclear modification factor $R_{AA}$ in central heavy-ion collisions at three different center-of-mass energies, as a function of $\pt{}$, for neutral pions ($\pi^0$), charged hadrons ($h\pm$), and charged particles~\cite{Aamodt:2010jd, Aggarwal:2001gn, d'Enterria:2004ig, Adare:2008qa, Adams:2003kv}, compared to several theoretical predictions~\cite{Dainese:2004te, Vitev:2002pf, Vitev:2004bh, Salgado:2003gb, Armesto:2005iq, Renk:2011gj}. The error bars on the points are the statistical uncertainties, and the yellow boxes around the CMS points are the systematic uncertainties. The bands for several of the theoretical calculations represent their uncertainties~\cite{CMS:2012aa}.}
+        \label{fig:Raa}
+\end{figure}
+
+
+The nuclear modification factor can also be used to quantify anisotropy. In the study of anisotropy $R_{AA}$ in-plane and out-of-plane can be compared. The distance traveled through medium is largest out-of-plane which leads to stronger suppression in this direction. The nuclear modification factor as a function of $\Delta\phi=\phi-\psi_n$ is given by
+
+\begin{eqnarray}
+R_{AA}\left(\Delta\phi, \pt{}\right) &=& \frac{(1/N_{AA}^{evt})\dd {^2N}^{AA}/d\Delta\phi \dd {\pt{}}}{\left< N_{coll}\right> (1/N_{pp}^{evt})\dd {N^{pp}}/\dd {\pt{}}} \approx \frac{\dd {N^{AA}}/\dd {\pt{}}\left( 1+2\cdot v_2\cos{(2\Delta\phi)} \right)}{\left< N_{coll}\right> \dd {N^{pp}}/\dd {\pt{}}} \nonumber \\ &&\nonumber\\
+&=& R_{AA}^{incl}(\pt{}) \left( 1+2\cdot v_2\cos{(2\Delta\phi)} \right).
+\label{eq:raaandv2}
+\end{eqnarray}	
+
+The yield of proton-proton collisions is independent of the reaction plane and the yield in heavy-ion collisions is modulated by the second harmonics. In Eq. (\ref{eq:raaandv2}) $R_{AA}$ is approximated only up to the second harmonics.
+From \eq{eq:raaandv2} it follows that
+
+\begin{equation}
+\frac{R_{AA}\left(0, \pt{}\right)-R_{AA}\left(\pi/2, \pt{}\right)}{R_{AA}^{incl}(\pt{})} \approx \frac{R_{AA}^{incl}(\pt{}) \left(1+2 \cdot v_2-(1-2 \cdot v_2) \right)}{R_{AA}^{incl}(\pt{})} = 4 \cdot v_2
+\label{eq:raaandv2result}
+\end{equation} 
+%At high-$\pt{}$, the pQCD processes are dominant, hence the $v_n$ (or $R_{AA}(\Delta\phi, \pt{})$) characterize the path length-dependence of the energy loss process. 
+The observed $R_{AA}\left(\Delta\phi, \pt{}\right)$  from PHENIX measurements in Au-Au collisions at $\sqrt{s}=200\gev$~\cite{PhysRevC.80.054907} is compared to $R_{AA}$ using $v_2$  via \eq{eq:raaandv2} in Fig.~\ref{fig:RAAv2}. They agree very well within the statistical errors for all centrality and $\pt{}$ bins.
+\begin{figure}[htb]
+	\centering
+                \includegraphics[width=0.5\textwidth]{pics/RAAandv2Correlation}
+        \caption[A comparison between observed $R_{AA}\left(\Delta\phi, \pt{}\right) $ and $R_{AA}$ using $v_2$]{ A comparison between observed $R_{AA}\left(\Delta\phi, \pt{}\right) $ and $R_{AA}$ using $v_2$ from PHENIX measurements of Au-Au collisions at $\sqrt{s}=200\gev$. On the X-axis is the measured $R_{AA}\left(\Delta\phi,\pt{}\right)$. On the y-axis is the inclusive $R_{AA}$ multiplied by  $1+2v_2\cos\left(\Delta\phi\right)$~\cite{PhysRevC.80.054907}.}
+        \label{fig:RAAv2}
+\end{figure}
+
+At high-$\pt{}$, the pQCD processes are dominant, hence the $v_n$ (or $R_{AA}(\Delta\phi, \pt{})$) characterize the pathlength-dependence of the energy loss process.
+
+Jet quenching is not the only high $\pt{}$ phenomenon studied in heavy-ion collisions. Another property is jet fragmentation. The high momentum parton created in the initial collision fragments into a number of partons with smaller $\pt{}$. Jet fragmentation occurs also in proton-proton collisions in the vacuum, but it can be modified due to the presence of the medium. In order to study the jet fragmentation function ($D(z)$, where $z= \pt{}^h/\pt{}^{part}$) modification due the medium, we use the two-particle correlations. The particle yield can be extracted from the correlation function. The background from the flow processes is correlated and needs to be subtracted to get the particle yield associated only with the jet. The ratio of the jet yields in Au-Au and p-p collision $I_{AA} = {Y^{Au+Au}}/{Y^{p+p}}$ characterizes the jet fragmentation modification \cite{Aamodt:2011vg}. $I_{AA}$ probes the interplay between the parton production spectrum, the relative importance of quark-quark, gluon-gluon and quark-gluon final states, and energy loss in the medium.
+
+\FloatBarrier
+\subsubsection{Fluctuations and Event-by-Event Flow}
+The colliding nuclei are not static objects but the distribution of nucleons fluctuates over time. The arrangement of the nucleons at the time of the collision is random, which leads to fluctuations in the initial conditions. The shape of the collision zone is not a perfect almond and it can have a more complex shape. Also the density of the created medium is not homogenous but it can have dense hot spots. The initial density distribution of the created medium is the main reason for anisotropic flow. Because of fluctuations the strength of anisotropic flow is not constant event-by-event.
+
+The existence of more complex density profiles also leads to odd flow harmonics. The basic hydrodynamical approach could only explain elliptic flow and even-harmonics. For a long time it was believed that the odd harmonics would be negligible. In 2007 Mishra {\emph et al.}~\cite{Mishra:2007tw} argued that density inhomogeneities in the initial state would lead to non-zero $v_n$ values for higher harmonics including $v_3$.  It was later noted that higher harmonics of $v_n$ would be suppressed by viscous effects and that the shape of $v_n$ as a function of $n$ would provide another valuable tool for studying $\eta/s$~\cite{Mocsy:2010um}. 
+
+In 2010 significant $v_3$ components were also observed in RHIC data~\cite{Alver:2010gr}. The AMPT model that is also studied in this thesis was able to quantitatively describe the centrality dependence of $v_3$ at RHIC and LHC energies, $\snn=200 \gev$ and $2.76\tev$~\cite{Xu:2011fe}.
+
+%Initial state fluctuations can be modelled using the Glauber model~\cite{Alver:2008zza}. However, so far all models fail to describe the experimental $v_n$ distributions consistently over the whole centrality range~\cite{Jia:2012ve}.
+
+Contrary to elliptic flow higher harmonics are not strongly affected by the centrality of the collision. This supports the theory of higher harmonics being the result of fluctuations. Also $v_2$ measurements of ultra-central collisions give non-zero results for flow, even though the traditional approach based on the anisotropy of the overlap zone gives no prediction of anisotropic flow. This is also the result of fluctuations. Measurement of distributions of $v_n$ coefficients has been performed at ATLAS~\cite{Jia:2012ve}. Their measurements of distributions for $v_2$ in central collisions and for $v_3$ and $v_4$ in general are consistent with a pure Gaussian fluctuation scenario~\cite{Jia:2012ve}.
+
+\begin{figure}[tb]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+                \includegraphics[width=\textwidth]{pics/alice_vn_figa.pdf}
+        \caption[ALICE measurement of $v_2$, $v_3$, $v_4$, $v_5$]{ALICE measurement of $v_2$, $v_3$, $v_4$, $v_5$ as a function of transverse momentum. The flow coefficients are determined by two-particle correlations using different rapidity separations. 
+        The full and open symbols are for $\Delta\eta > 0.2$ and $\Delta\eta > 1.0$. 
+        The results are compared to hydrodynamic predictions~\cite{Schenke:2011tv} with different values of $\eta/s$~\cite{PRL107032301}.}
+        \label{fig:higherharmonics}
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{pics/2012-Jun-06-fig02b}
+        \caption{Amplitude of $v_n$ harmonics as a function of $n$ for the 2\% most central collisions as  measured by ALICE~\cite{Aamodt2012249}.}
+        \label{fig:alicepowers}
+
+        \end{subfigure} 
+        
+%        \begin{subfigure}[t]{\textwidth}
+ %               \includegraphics[width=\textwidth]{pics/atlas_powerspectra.png}
+%        \caption{Power spectra of $v_n$ for the 1\% most central collisions measured by ATLAS~\cite{PhysRevC.86.014907}.}
+%        \label{fig:atlaspowers}
+ %       \end{subfigure}
+                \caption[Flow measurements of higher harmonics]{Flow measurements of higher harmonics}
+                \label{fig:vnpowers}
+
+\end{figure}
+
+Measurements of different flow harmonics are shown in Fig.~\ref{fig:vnpowers}. The left panel shows different flow harmonics as a function of $\pt{}$ as measured by ALICE~\cite{PRL107032301} in peripheral collisions. In general flow coefficients decrease as a function of $n$ after $n=2$. Central collisions are an exception.The right panel of  Fig.~\ref{fig:vnpowers} shows $v_n$ as a function of $n$ in central collisions as measured by ALICE~\cite{Aamodt2012249}.
+
+
+
+Measurement of event-by-event flow and higher harmonics has growing importance in the field. Triangular flow is useful also for studying jet quenching and in-medium energy loss since anisotropies of flow are related to the path lengths of partons traversing through the medium. Path-lengths and medium density in turn are related the energy loss. An interesting topic of future research would be studying jet properties like $R_{AA}$ separately in events with strong and weak anisotropy.
+
+
+%\section{Flow of identified charged particles}
+\FloatBarrier
+\pagebreak
+\subsection{Identified Charged Particle Flow}
+\label{sec:qns}
+In this thesis I study flow of identified charged particles in the AMPT model. Analysis of identified flow has been performed already at RHIC and now at LHC. The ALICE detector at LHC has unique particle identification capabilities. This makes it well suited to measuring flow of identified particles~\cite{Abelev:2013vea}. Results from ALICE for spectra of pions, kaons and protons are shown in Fig.~\ref{fig:dndptpid}. The experimental results are overlaid with hydrodynamical calculations from the VISHNU model~\cite{Song:2013qma}. The figure shows that vast majority of hadrons produced in a heavy-ion collision are pions.  The yield of pions is an order of magnitude larger than the yield of kaons and almost three orders larger than the yield of protons. Pions are the lightest of hadrons (mass of $\pi^\pm\approx140\mevc$) which makes producing them more favourable than production of protons (mass $\approx 938 \mevc$). 
+
+\begin{figure}[htb]
+\centering
+\includegraphics[width=0.7\textwidth]{pics/spectra}
+\caption[$\pt{}$ -spectra for pions, kaons and protons]{Transverse momentum spectra for pions, kaons and protons in $\snn=2.76\tev$ Pb-Pb collisions. Experimental data are from ALICE~\cite{Abelev:2013vea}. Theoretical curves are from hydrodynamical calculations~\cite{Song:2013qma}. From top to bottom the curves correspond to 0-5\% ($\times 1000$), 5-10\% ($\times 100$), 10-20\% ($\times 10$), 20-30\%, 30-40\% ($\times0.1$), 40-50\% ($\times 0.01$), 50-60\% ($\times 0.001$), 60-70\% ($ \times 10^{-4}$), 70-80\% ($\times 10^{-5}$) centrality, respectively, where the factors in parentheses indicate the multipliers applied to the spectra for a more clear presentation~\cite{Song:2013qma}.}
+\label{fig:dndptpid}
+\end{figure}
+
+\subsubsection{Quark Number Scaling}
+\begin{figure}[htbp]
+	\centering
+                \includegraphics[width=0.99\textwidth]{pics/QNS_RHIC}
+        \caption[$v_2/n_q$ as a function of $\pt{}/n_q$ and $v_2/n_q$ vs $KE_T/n_q$ at RHIC]{(a) $v_2$ as a function of $\pt{}$, (b) $v_2/n_q$ as a function of $\pt{}/n_q$ and (right) $v_2/n_q$ as a function of $KE_T/n_q$ for identified particle species obtained in minimum bias Au-Au collisions~\cite{Phenix2008}.}
+        \label{fig:phenixQNS}
+\end{figure}
+
+%When observing flow seperately for different particle species a difference between the flow coefficients of different particle types can be seen.
+Anisotropic flow studies can be extended to identified particles. When studying elliptic flow coefficients of different particle species as a function of $\pt{}$ one sees that the data are ordered by the masses of the particles. There is also a clear separation between mesons and baryons. Scaling $v_n$ coefficients by the number of quarks, $n_q$ (For mesons $n_q=2$ and for baryons $n_q=3$) removes this separation. Results from $v_2$ measurements in Au-Au collisions at $\snn=200\gev$ from PHENIX~\cite{Phenix2008} are shown in Fig.~\ref{fig:phenixQNS}. At RHIC it was further observed that plotting the coefficients as a function of transverse kinetic energy $KE_T$
+\begin{equation}
+KE_T=\sqrt{m^2+\pt{}^2}-m
+\label{eq:KET}
+\end{equation}
+
+
+\noindent instead of $\pt{}$ removes the mass ordering and gives almost perfect scaling between identified hadrons. Differences vanish in some energy range completely~\cite{Phenix2008}. This was taken as a strong indication that anisotropic flow at RHIC develops primarily in the partonic phase, and is not strongly influenced by the subsequent hadronic phase~\cite{Lacey:2012ma}.
+
+Particle specific flow has also been studied in ALICE at LHC with $\snn=2.76\tev$~\cite{Lacey:2012ma}. It has been observed that the quark number scaling that worked perfectly at RHIC breaks down at LHC energies. Pions and kaons align well, but proton $v_2/n_q\left(KE_T\right)$ data does not follow the meson data. Data from ALICE is shown in Fig.~\ref{fig:ALICEQNS}.
+
+One way to get similar scaling also for protons was presented by Lacey \emph{et al}~\cite{Lacey:2012ma}. They assumed that proton data had a blueshift of $~0.2\gevc$ and correcting this with a similar redshift, i.e. decreasing the proton $\pt{}$ by $~0.2\gevc$ prior to the quark number scaling almost restores the scaling between protons and light mesons.
+
+%Quark number scaling as such does not work at LHC energies. However adding a redshift to proton data, i.e. shifting the proton data points to lower $\pt{}$ by $0.2\gevc$ before the quark number scaling almost restores the scaling between protons and light mesons. %ALICE quark number scaling data after adding the proton redshift is shown in Fig.~\ref{fig:laceyQNS2}
+
+\begin{figure}[tbh]
+	\centering
+	\begin{subfigure}[t]{0.48\textwidth}
+                \includegraphics[width=1.1\textwidth]{pics/ALICEpidFlow}
+
+        \end{subfigure}
+        \quad
+        \begin{subfigure}[t]{0.48\textwidth}
+        \includegraphics[width=1.1\textwidth]{pics/ALICEQNS}
+    %    \caption{Amplitude of $v_n$ harmonics as a function of $n$ for the 2\% most central collisions as  measured by ALICE~\cite{Aamodt2012249}.}
+        \end{subfigure} 
+
+        \caption[Quark number scaling in ALICE]{Identified particle flow coefficients with quark number scaling as measured by ALICE.}
+        \label{fig:ALICEQNS}
+\end{figure}
+
+
+%At RHIC energies, where $\snn=200\gev$, it was noticed that plotting quark number scaled $v_2$ versus the quark number scaled transverse kinetic energy $KE_T$ there is almost perfect alignment between identified hadrons. Differences vanish in some energy range completely~\cite{Phenix2008}. The PHENIX results for quark number scaling are shown in Fig.~\ref{fig:phenixQNS}.
+
+
+
+
+
+%The dominance of the partonic phase in the development of flow is also supported by the measurement of the flow of the $\phi$ meson, which is comprised of a strange quark and a strange antiquark. This meson has a small hadronic cross section with non-strange hadrons and therefore its flow magnitude should not be largely affected by the hadronic phase.  Since $v_2$ for $\phi$ follows the behavior of light mesons it has been concluded that the partonic phase is dominant in the development of flow~\cite{Lacey:2012ma}.
+
+%\subsubsection{Identified charged particle flow at LHC energies}
+%Particle specific flow has also been studied in ALICE at LHC with $\snn=2.76\tev$~\cite{Lacey:2012ma}. The results of $v_2$ for pions, kaons and protons are shown in Fig.~\ref{fig:laceyQNS} and compared to RHIC results. These results show that the LHC values are approximately 20\% higher than RHIC values for kaons and pions and scaling the RHIC data aligns the two data sets. For large $\pt{}$ this 20\% difference can be also seen in the proton data. However for lower $\pt{},\, \left(\pt{}\lesssim 2.0 \gevc\right)$  the RHIC $v_2$ is larger than the LHC value. One way to get similar scaling also for protons was presented by Lacey \emph{et al}~\cite{Lacey:2012ma}. They added a blueshift of $~0.2\gevc$, i.e. increasing the $\pt{}$ by $~0.2\gevc$ to the RHIC data which gave excellent agreement  with the LHC data after scaling by the same factor of $~1.2$ with the LHC data. Similar agreement has been obtained for other centrality bins with approximately the same blueshift value. The scale factor between RHIC and LHC data is larger in central collisions and smaller in peripheral collisions, respectively.
+
+%They assumed that there is a small blueshift in LHC proton data. This blueshift can be linked to a sizeable increase in the magnitude of the radial flow generated in these collisions, especially in the hadronic phase. 
+
+%The observed increase in $v_2$ from RHIC to LHC suggests that the expansion dynamics in LHC collisions is driven by a larger mean sound speed in the quark-gluon plasma. The increase in mean sound speed could be the result of the increase in energy density from RHIC to LHC.
+
+
+%Quark number scaling as such does not work at LHC energies. However adding a redshift to proton data, i.e. shifting the proton data points to lower $\pt{}$ by $0.2\gevc$ before the quark number scaling almost restores the scaling between protons and light mesons. ALICE quark number scaling data after adding the proton redshift is shown in Fig.~\ref{fig:laceyQNS2}
+
+%Such a blueshift has been observed in recent viscous hy-
+ %drodynamical calculations for LHC collisions [36]
+
+%\begin{figure}[tbh]
+%	\centering
+%                \includegraphics[width=0.95\textwidth]{pics/laceyQNS}
+%        \caption[Comparison of PHENIX and ALICE data for $v_2\left(\pt{}\right)$ vs. $\pt{}$ for $\pi$, $K$, and $p$]{Comparison of PHENIX and ALICE data for $v_2\left(\pt{}\right)$ as a function of $\pt{}$ for $\pi$, $K$, and $p$ as indicated. Results are shown for the 20-30\% most central collisions. Similar behaviour is observed for all centrality bins~\cite{Lacey:2012ma}.}
+%        \label{fig:laceyQNS}
+%\end{figure}
+%
+%\begin{figure}[tbh]
+%	\centering
+%                \includegraphics[width=\textwidth]{pics/laceyQNS2}
+%        \caption[$v_2\left(KE_T\right)/n_q$ vs. $KE_T/n_q$ for pions, kaons and protons at ALICE]{$v_2\left(KE_T\right)/n_q$ as a function of $KE_T/n_q$ for pions, kaons and protons at ALICE, assuming the proton blueshift~\cite{Lacey:2012ma}.}
+%        \label{fig:laceyQNS2}
+%\end{figure}
+
+
+\subsubsection{Quark Coalescence Model}
+
+Quark number scaling has been explained by a simple quark coalescence model, with constituent quark recombination~\cite{Molnar:2003ff}. Since $v_2$ is the coefficient from a Fourier series it can be calculated for quarks by
+
+\begin{equation}
+v_{2,q}=\left<\cos \left(2 \phi\right) \right>=\frac{1}{2\pi}\int_0^{2\pi}\frac{\dd {N^{quark}}}{\dd \phi}\cos\left(2\phi \right)\dd \phi,
+\end{equation} 
+
+In the coalescence model the hadronization phase is described such that three nearest quarks combine into a baryon and nearby quark-antiquark pairs combine into mesons. The usual coalescence model assumes that the invariant spectrum of particles produced in the hadronization is proportional to the product of the invariant spectra of constituents, i.e. the quarks~\cite{Molnar:2003ff}. In this case the Baryon $N_b$ and meson $N_m$ spectra are given by
+
+
+\begin{eqnarray}
+\frac{\dd {N_b}}{\dd{^2 \pt{}}}\left(\pt{}\right) &=& C_b\left(\pt{}\right)\left[\frac{\dd{N_q}}{\dd{^2\pt{}}}\left(\frac{p_{T,q}}{3}\right)\right]^3 \nonumber \\ &&\nonumber\\
+\frac{\dd {N_m}}{\dd{^2 \pt{}}}\left(\pt{}\right) &= & C_m\left(\pt{}\right)\left[\frac{\dd {N_q}}{\dd{^2\pt{}}}\left(\frac{p_{T,q}}{2}\right)\right]^2,
+\end{eqnarray}
+
+\noindent where the coefficients $C_b$ and $C_m$ are probabilities for $q\bar q$ to meson and $qqq$ to baryon coalescence. Hence the meson and baryon $v_2$ coefficients are
+
+\begin{equation}
+v_{2,h}=\frac{1}{2\pi}\int_0^{2\pi}\left(\frac{\dd{N^{quark}}}{\dd \phi}\right)^{n_q} \cos\left(2\phi \right)\dd \phi = n_q v_{2,q}.
+\end{equation} 
+where $n_q$ is the number of quarks. %$n_q$ is 2 for mesons and 3 for baryons.
+Therefore 
+
+\begin{eqnarray}
+v_{2,m}\left(KE_T\right)&\approx& 2\cdot v_{2,q}\left(\frac{KE_T}{2}\right), \nonumber \\ &&\nonumber\\
+v_{2,b}\left(KE_T\right)&\approx& 3\cdot v_{2,q}\left(\frac{KE_T}{3}\right)
+\end{eqnarray}
+
+Identified charged particle flow at LHC energies has also been studied in hydrodynamical calculations. For example in the VISHNU model~\cite{Song:2013qma}. The model has provided similar results as the LHC measurements.
+
+The simple quark coalescence model has been challenged and nowadays many believe that there is actually no reason for perfect quark number scaling. So far there is no agreement of what causes the breaking of quark number scaling at LHC energies or why it worked so well for RHIC data.
+
+The AMPT model that I study in thesis uses the simple quark coalescence assumption in the hadronization phase. Therefore it should give perfect quark number scaling. I will present results of identified particle flow and quark number scaling in the model.
+

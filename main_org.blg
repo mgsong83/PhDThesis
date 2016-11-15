@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main_org.aux
+The style file: ieeetr.bst
+Database file #1: myThesisRefs.bib
+Warning--entry type for "aliroot" isn't style-file defined
+--line 1758 of file myThesisRefs.bib
+Warning--entry type for "cds" isn't style-file defined
+--line 1772 of file myThesisRefs.bib
+Warning--entry type for "cms" isn't style-file defined
+--line 1779 of file myThesisRefs.bib
+Warning--entry type for "alice" isn't style-file defined
+--line 1786 of file myThesisRefs.bib
+Warning--entry type for "atlas" isn't style-file defined
+--line 1793 of file myThesisRefs.bib
+Warning--entry type for "fig_phase_dia" isn't style-file defined
+--line 2276 of file myThesisRefs.bib
+Warning--I didn't find a database entry for "ATLAS:2012jna"
+Warning--empty journal in Kolb:2003dz
+Warning--empty journal in Voloshin:2008dg
+Warning--empty title in karsch
+Warning--can't use both author and editor fields in Rapp2011
+Warning--empty journal in Miller:2003kd
+Warning--empty author and editor in lhc
+Warning--empty author in CERN-LHCC-2013-020
+Warning--empty institution in CERN-LHCC-2013-020
+Warning--empty author in Brun:1994aa
+Warning--empty journal in Brun:1994aa
+Warning--empty journal in Zhu:2016puf
+Warning--empty journal in Alver:2008aq
+You've used 135 entries,
+            1876 wiz_defined-function locations,
+            1264 strings with 26733 characters,
+and the built_in function-call counts, 38501 in all, are:
+= -- 3994
+> -- 1377
+< -- 1
++ -- 514
+- -- 379
+* -- 2318
+:= -- 5065
+add.period$ -- 137
+call.type$ -- 135
+change.case$ -- 130
+chr.to.int$ -- 0
+cite$ -- 147
+duplicate$ -- 2337
+empty$ -- 3335
+format.name$ -- 379
+if$ -- 9831
+int.to.chr$ -- 0
+int.to.str$ -- 135
+missing$ -- 129
+newline$ -- 416
+num.names$ -- 126
+pop$ -- 372
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 2046
+stack$ -- 0
+substring$ -- 2139
+swap$ -- 1289
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 12
+while$ -- 298
+width$ -- 138
+write$ -- 1320
+(There were 19 warnings)
