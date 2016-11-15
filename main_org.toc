@@ -60,10 +60,10 @@
 \contentsline {subsection}{\numberline {4.1.1}$SC(3,2)$ and $SC(4,2)$}{60}
 \contentsline {subsection}{\numberline {4.1.2}Model Comparison}{63}
 \contentsline {section}{\numberline {4.2}Higher order flow harmonics results}{71}
-\contentsline {section}{\numberline {4.3}$p_T$ dependence of $SC(m,n)$ and normalized $SC(m,n)$}{75}
+\contentsline {section}{\numberline {4.3}$p_{\rm {T}}$ dependence of $SC(m,n)$ and normalized $SC(m,n)$}{75}
 \contentsline {section}{\numberline {4.4}Method comparison}{80}
 \contentsline {subsubsection}{Method comparison of higher order harmonics}{80}
-\contentsline {subsubsection}{$p_T$ dependence of $SC(m,n)$ with SP method}{81}
+\contentsline {subsubsection}{$p_{\rm {T}}$ dependence of $SC(m,n)$ with SP method}{81}
 \contentsline {chapter}{\numberline {5}Conclusion and Outlook}{87}
 \contentsline {chapter}{Appendices}{90}
 \contentsline {chapter}{\numberline {A}Toy MC simulation}{91}
@@ -81,14 +81,8 @@
 \contentsline {subsection}{\numberline {C.3.1}$R_{AA}(p_T, \Delta \phi )$}{108}
 \contentsline {subsection}{\numberline {C.3.2}Convert $\Delta \phi $ to path-length}{109}
 \contentsline {subsection}{\numberline {C.3.3}Path-length dependence of $R_{AA}$}{109}
-\contentsline {section}{\numberline {C.4}Summary}{113}
-\contentsline {chapter}{\numberline {D}Software and Data Information}{114}
-\contentsline {subsection}{\numberline {D.0.1}Software Information}{114}
-\contentsline {subsection}{\numberline {D.0.2}Data Information}{114}
-\contentsline {subsubsection}{LHC10h data}{114}
-\contentsline {subsubsection}{HIJING}{115}
-\contentsline {subsubsection}{AMPT}{115}
+\contentsline {section}{\numberline {C.4}Summary}{111}
 \ttl@change@i {\@ne }{chapter}{0pt}{}{\bfseries \ \hspace {13pt} }{ }{\bfseries \dotfill \contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\numberline {} \@LN@changevadjust \vspace {0pt}\hspace *{-0.3in} References}{115}
+\contentsline {chapter}{\numberline {} \@LN@changevadjust \vspace {0pt}\hspace *{-0.3in} References}{113}
 \contentsfinish 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.5)  11 NOV 2016 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.5)  15 NOV 2016 15:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -902,10 +902,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 \openout3 = `main_org.toc'.
 
  [3] (./main_org.lof
-Overfull \hbox (2.7154pt too wide) in paragraph at lines 8--8
+Overfull \hbox (4.7959pt too wide) in paragraph at lines 8--8
  [][]  \OT1/ptm/m/n/10.95 Fig-ure []The pub-lished re-sults of flow with AL-ICE
- Pb + Pb $[] \OT1/cmr/m/n/10.95 = 2\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 76$\
-OT1/ptm/m/n/10.95 TeV 
+ Pb + Pb $[] \OT1/cmr/m/n/10.95 = 2\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 76$ 
+\OT1/ptm/m/n/10.95 TeV 
  []
 
 
@@ -936,17 +936,10 @@ ar-i-ous $\OML/cmm/m/it/10.95 ^^Q=s$ \OT1/ptm/m/n/10.95 parametriza-
  []
 
 
-Overfull \hbox (13.65483pt too wide) in paragraph at lines 30--30
- [][]  \OT1/ptm/m/n/10.95 Fig-ure []Result of SC(3,2) and SC(4,2) with HI-JING 
-sim-u-la-tions. Defaults($\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n
-/10.95 2 \OML/cmm/m/it/10.95 < 
- []
-
-
-Overfull \hbox (4.67943pt too wide) in paragraph at lines 31--31
- [][]  \OT1/ptm/m/n/10.95 Fig-ure []Normalized $\OML/cmm/m/it/10.95 SC\OT1/cmr/
-m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/cmr/m/n/10.95 )$\OT1/ptm/m/n/10.95 (red
-) with the com-par-i-son to MC-Glauber mod- 
+Overfull \hbox (29.10522pt too wide) in paragraph at lines 30--30
+ [][]  \OT1/ptm/m/n/10.95 Fig-ure []The re-sult of SC(3,2) and SC(4,2) with HI-
+JING sim-u-la-tions. Defaults($\OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cm
+r/m/n/10.95 2 \OML/cmm/m/it/10.95 < 
  []
 
 [6]
@@ -956,13 +949,7 @@ umulants method
  []
 
 
-Overfull \hbox (0.57236pt too wide) in paragraph at lines 34--34
- \OML/cmm/m/it/10.95 SC\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/cmr/m/n
-/10.95 )$ \OT1/ptm/m/n/10.95 are scaled down. Both $\OML/cmm/m/it/10.95 SC\OT1/
-cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95
- and $\OML/cmm/m/it/10.95 NSC\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/c
-mr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 with lower 
- []
+LaTeX Warning: Reference `vish21' on page 75 undefined on input line 37.
 
 [7]
 Overfull \hbox (0.29054pt too wide) in paragraph at lines 41--41
@@ -984,6 +971,10 @@ m/m/it/10.95 :\OT1/cmr/m/n/10.95 02$\OT1/ptm/m/n/10.95 TeV/$\OML/cmm/m/it/10.95
 [8]
 
 LaTeX Warning: Citation `ATLAS:2012jna' on page ix undefined on input line 51.
+
+
+LaTeX Warning: Reference `eq:pathlength' on page 108 undefined on input line 57
+.
 
 [9]
 Overfull \hbox (9.10602pt too wide) in paragraph at lines 61--61
@@ -1135,37 +1126,33 @@ hod to mea-sure anisotropic
 
 [12] [13 <./figures/system_time_flow.png> <./figures/time_ecenx_ecenp.png>]
 [14 <./figures/v2explin.png>] [15 <./figures/fig_complxshape.png>] [16]
-[17]
+[17] [18]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 396.
+(amsmath)                 on input line 397.
 
-[18] [19] [20]
+[19] [20]
 
-LaTeX Warning: Reference `eq:taylor' on page 21 undefined on input line 470.
+LaTeX Warning: Reference `eq:taylor' on page 21 undefined on input line 471.
 
-[21] <figures/alice_flow_result.pdf, id=145, 569.12625pt x 385.44pt>
+[21] [22] <figures/alice_flow_result.pdf, id=149, 569.12625pt x 385.44pt>
 File: figures/alice_flow_result.pdf Graphic file (type pdf)
 
 <use figures/alice_flow_result.pdf>
-Package pdftex.def Info: figures/alice_flow_result.pdf used on input line 542.
+Package pdftex.def Info: figures/alice_flow_result.pdf used on input line 543.
 (pdftex.def)             Requested size: 341.43306pt x 231.24225pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[22] [23 <./figures/alice_flow_result.pdf, page is rotated 90 degrees>]
-<figures/raa.png, id=196, 624.3325pt x 581.17125pt>
+ [23 <./figures/alice_flow_result.pdf, page is rotated 90 degrees>] <figures/ra
+a.png, id=196, 624.3325pt x 581.17125pt>
 File: figures/raa.png Graphic file (type png)
- <use figures/raa.png>
-Package pdftex.def Info: figures/raa.png used on input line 565.
-(pdftex.def)             Requested size: 341.43306pt x 317.8361pt.
 
-[24 <./figures/raa.png>] [25] [26
+<use figures/raa.png>
+Package pdftex.def Info: figures/raa.png used on input line 566.
+(pdftex.def)             Requested size: 341.43306pt x 317.8361pt.
+ [24] [25 <./figures/raa.png>] [26
 
 ]
-Overfull \hbox (12.54478pt too wide) in paragraph at lines 605--606
+Overfull \hbox (12.54478pt too wide) in paragraph at lines 606--607
 \OT1/ptm/m/n/10.95 an-gles by us-ing event plane meth-ods [[]], which mea-sure 
 higher-order flow (like $\OML/cmm/m/it/10.95 v\OT1/cmr/m/n/10.95 4\OML/cmm/m/it
 /10.95 ; v\OT1/cmr/m/n/10.95 5\OML/cmm/m/it/10.95 ; v\OT1/cmr/m/n/10.95 6$\OT1/
@@ -1176,7 +1163,7 @@ ptm/m/n/10.95 )
 File: figures/atlas_eventcorr.png Graphic file (type png)
 
 <use figures/atlas_eventcorr.png>
-Package pdftex.def Info: figures/atlas_eventcorr.png used on input line 608.
+Package pdftex.def Info: figures/atlas_eventcorr.png used on input line 609.
 (pdftex.def)             Requested size: 341.43306pt x 216.86508pt.
 
 
@@ -1186,7 +1173,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/cms_vn_evt.png Graphic file (type png)
 
 <use figures/cms_vn_evt.png>
-Package pdftex.def Info: figures/cms_vn_evt.png used on input line 615.
+Package pdftex.def Info: figures/cms_vn_evt.png used on input line 616.
 (pdftex.def)             Requested size: 341.43306pt x 253.3313pt.
 
 
@@ -1260,7 +1247,11 @@ Chapter 3.
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 57.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [42]
+)
+
+LaTeX Warning: Reference `DataInfo' on page 42 undefined on input line 77.
+
+[42]
 Package epstopdf Info: Source file: <figures/figs_QA/eta_ratio_run137135_eta_04
 _08.eps>
 (epstopdf)                    date: 2015-06-12 18:02:42
@@ -1546,11 +1537,11 @@ Overfull \hbox (21.33952pt too wide) in paragraph at lines 379--393
 igs_systematics/Contamination_PbPb276.pdf>] [59] (./results.tex
 Chapter 4.
 Package epstopdf Info: Source file: <figures/figs_results/fig1_QConly.eps>
-(epstopdf)                    date: 2016-10-24 15:41:40
+(epstopdf)                    date: 2016-11-09 21:03:03
 (epstopdf)                    size: 14242 bytes
 (epstopdf)             Output file: <figures/figs_results/fig1_QConly-eps-conve
 rted-to.pdf>
-(epstopdf)                    date: 2016-11-09 15:40:45
+(epstopdf)                    date: 2016-11-15 13:20:08
 (epstopdf)                    size: 12250 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig1_
 QConly-eps-converted-to.pdf figures/figs_results/fig1_QConly.eps>
@@ -1567,11 +1558,11 @@ used on input line 15.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig1_QConly_norm.eps>
 
-(epstopdf)                    date: 2016-10-24 15:41:40
+(epstopdf)                    date: 2016-11-09 21:03:03
 (epstopdf)                    size: 16914 bytes
 (epstopdf)             Output file: <figures/figs_results/fig1_QConly_norm-eps-
 converted-to.pdf>
-(epstopdf)                    date: 2016-11-09 15:40:46
+(epstopdf)                    date: 2016-11-15 13:20:08
 (epstopdf)                    size: 12929 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig1_
 QConly_norm-eps-converted-to.pdf figures/figs_results/fig1_QConly_norm.eps>
@@ -1594,12 +1585,12 @@ Package pdftex.def Info: figures/figs_results/fig1_QConly_norm-eps-converted-to
 _results/fig1_QConly_norm-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/figs_results/SC_Comparison_SC32_HI
 JING_ptdep.eps>
-(epstopdf)                    date: 2016-06-07 14:26:04
+(epstopdf)                    date: 2016-11-09 21:03:03
 (epstopdf)                    size: 17873 bytes
 (epstopdf)             Output file: <figures/figs_results/SC_Comparison_SC32_HI
 JING_ptdep-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-06 17:23:43
-(epstopdf)                    size: 13058 bytes
+(epstopdf)                    date: 2016-11-15 13:20:09
+(epstopdf)                    size: 13109 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/SC_Co
 mparison_SC32_HIJING_ptdep-eps-converted-to.pdf figures/figs_results/SC_Compari
 son_SC32_HIJING_ptdep.eps>
@@ -1617,12 +1608,12 @@ ps-converted-to.pdf used on input line 30.
 (pdftex.def)             Requested size: 569.12486pt x 642.39844pt.
 Package epstopdf Info: Source file: <figures/figs_results/SC_Comparison_SC42_HI
 JING_ptdep.eps>
-(epstopdf)                    date: 2016-06-06 12:18:04
+(epstopdf)                    date: 2016-11-09 21:03:03
 (epstopdf)                    size: 17874 bytes
 (epstopdf)             Output file: <figures/figs_results/SC_Comparison_SC42_HI
 JING_ptdep-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-06 17:24:07
-(epstopdf)                    size: 12743 bytes
+(epstopdf)                    date: 2016-11-15 13:20:09
+(epstopdf)                    size: 12797 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/SC_Co
 mparison_SC42_HIJING_ptdep-eps-converted-to.pdf figures/figs_results/SC_Compari
 son_SC42_HIJING_ptdep.eps>
@@ -1649,12 +1640,12 @@ Overfull \hbox (1.80496pt too wide) in paragraph at lines 43--44
 [63] [64]
 Package epstopdf Info: Source file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC3
 2.eps>
-(epstopdf)                    date: 2016-11-02 10:17:51
-(epstopdf)                    size: 13762 bytes
+(epstopdf)                    date: 2016-11-15 13:48:04
+(epstopdf)                    size: 13731 bytes
 (epstopdf)             Output file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC3
 2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-02 10:31:30
-(epstopdf)                    size: 11736 bytes
+(epstopdf)                    date: 2016-11-15 13:49:45
+(epstopdf)                    size: 11534 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fig_ecen/SC_Compar
 ison_ecen_BC_SC32-eps-converted-to.pdf figures/fig_ecen/SC_Comparison_ecen_BC_S
 C32.eps>
@@ -1672,12 +1663,12 @@ ted-to.pdf used on input line 73.
 (pdftex.def)             Requested size: 569.12486pt x 536.00119pt.
 Package epstopdf Info: Source file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC4
 2.eps>
-(epstopdf)                    date: 2016-11-02 10:16:53
-(epstopdf)                    size: 13311 bytes
+(epstopdf)                    date: 2016-11-15 13:46:56
+(epstopdf)                    size: 13280 bytes
 (epstopdf)             Output file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC4
 2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-02 10:31:30
-(epstopdf)                    size: 11694 bytes
+(epstopdf)                    date: 2016-11-15 13:49:45
+(epstopdf)                    size: 11493 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fig_ecen/SC_Compar
 ison_ecen_BC_SC42-eps-converted-to.pdf figures/fig_ecen/SC_Comparison_ecen_BC_S
 C42.eps>
@@ -1700,12 +1691,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC32_ampt.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 19188 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 17558 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC32_ampt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 18:14:44
-(epstopdf)                    size: 13854 bytes
+(epstopdf)                    date: 2016-11-09 21:03:25
+(epstopdf)                    size: 13995 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC32_ampt-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC32_ampt.eps>
@@ -1724,12 +1715,12 @@ ampt-eps-converted-to.pdf used on input line 116.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC42_ampt.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 19254 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 18091 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC42_ampt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 18:14:44
-(epstopdf)                    size: 14228 bytes
+(epstopdf)                    date: 2016-11-09 21:03:25
+(epstopdf)                    size: 14377 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC42_ampt-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC42_ampt.eps>
@@ -1751,12 +1742,12 @@ verted-to.pdf> <./figures/figs_results/fig3_QConly_ModelComparison_SC42_ampt-ep
 s-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC32_vish.eps>
-(epstopdf)                    date: 2016-11-08 21:42:16
-(epstopdf)                    size: 24092 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 24938 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC32_vish-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:42:41
-(epstopdf)                    size: 16513 bytes
+(epstopdf)                    date: 2016-11-09 21:03:23
+(epstopdf)                    size: 16677 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC32_vish-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC32_vish.eps>
@@ -1775,12 +1766,12 @@ vish-eps-converted-to.pdf used on input line 139.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC42_vish.eps>
-(epstopdf)                    date: 2016-11-08 21:42:16
-(epstopdf)                    size: 22101 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 22950 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC42_vish-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:42:41
-(epstopdf)                    size: 16215 bytes
+(epstopdf)                    date: 2016-11-09 21:03:24
+(epstopdf)                    size: 16369 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC42_vish-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC42_vish.eps>
@@ -1808,12 +1799,12 @@ erted-to.pdf> <./figures/figs_results/fig3_QConly_ModelComparison_SC42_vish-eps
 -converted-to.pdf>] [70]
 Package epstopdf Info: Source file: <figures/figs_results/fig2_QConly_higherSC.
 eps>
-(epstopdf)                    date: 2016-11-08 21:33:39
+(epstopdf)                    date: 2016-11-09 21:03:03
 (epstopdf)                    size: 11103 bytes
 (epstopdf)             Output file: <figures/figs_results/fig2_QConly_higherSC-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:35:25
-(epstopdf)                    size: 10855 bytes
+(epstopdf)                    date: 2016-11-09 21:03:20
+(epstopdf)                    size: 10837 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig2_
 QConly_higherSC-eps-converted-to.pdf figures/figs_results/fig2_QConly_higherSC.
 eps>
@@ -1831,12 +1822,12 @@ d-to.pdf used on input line 166.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig2_QConly_higherNSC
 .eps>
-(epstopdf)                    date: 2016-11-08 21:33:40
-(epstopdf)                    size: 14352 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 16600 bytes
 (epstopdf)             Output file: <figures/figs_results/fig2_QConly_higherNSC
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:35:25
-(epstopdf)                    size: 10842 bytes
+(epstopdf)                    date: 2016-11-09 21:03:20
+(epstopdf)                    size: 11317 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig2_
 QConly_higherNSC-eps-converted-to.pdf figures/figs_results/fig2_QConly_higherNS
 C.eps>
@@ -1860,12 +1851,12 @@ LaTeX Warning: Float too large for page by 10.96014pt on input line 171.
 figures/figs_results/fig2_QConly_higherNSC-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC5
 2.eps>
-(epstopdf)                    date: 2016-11-02 10:22:09
-(epstopdf)                    size: 14182 bytes
+(epstopdf)                    date: 2016-11-15 13:48:59
+(epstopdf)                    size: 14442 bytes
 (epstopdf)             Output file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC5
 2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-02 11:14:30
-(epstopdf)                    size: 12967 bytes
+(epstopdf)                    date: 2016-11-15 13:49:46
+(epstopdf)                    size: 13125 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fig_ecen/SC_Compar
 ison_ecen_BC_SC52-eps-converted-to.pdf figures/fig_ecen/SC_Comparison_ecen_BC_S
 C52.eps>
@@ -1883,12 +1874,12 @@ ted-to.pdf used on input line 183.
 (pdftex.def)             Requested size: 569.12486pt x 536.00119pt.
 Package epstopdf Info: Source file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC5
 3.eps>
-(epstopdf)                    date: 2016-11-02 10:21:24
-(epstopdf)                    size: 12574 bytes
+(epstopdf)                    date: 2016-11-15 13:49:15
+(epstopdf)                    size: 12834 bytes
 (epstopdf)             Output file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC5
 3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-02 11:14:31
-(epstopdf)                    size: 12662 bytes
+(epstopdf)                    date: 2016-11-15 13:49:46
+(epstopdf)                    size: 12813 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fig_ecen/SC_Compar
 ison_ecen_BC_SC53-eps-converted-to.pdf figures/fig_ecen/SC_Comparison_ecen_BC_S
 C53.eps>
@@ -1906,12 +1897,12 @@ ted-to.pdf used on input line 184.
 (pdftex.def)             Requested size: 569.12486pt x 536.00119pt.
 Package epstopdf Info: Source file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC4
 3.eps>
-(epstopdf)                    date: 2016-11-02 10:21:15
-(epstopdf)                    size: 12895 bytes
+(epstopdf)                    date: 2016-11-15 13:48:31
+(epstopdf)                    size: 13155 bytes
 (epstopdf)             Output file: <figures/fig_ecen/SC_Comparison_ecen_BC_SC4
 3-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-02 11:14:31
-(epstopdf)                    size: 12447 bytes
+(epstopdf)                    date: 2016-11-15 13:49:46
+(epstopdf)                    size: 12606 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/fig_ecen/SC_Compar
 ison_ecen_BC_SC43-eps-converted-to.pdf figures/fig_ecen/SC_Comparison_ecen_BC_S
 C43.eps>
@@ -1929,12 +1920,12 @@ ted-to.pdf used on input line 185.
 (pdftex.def)             Requested size: 569.12486pt x 536.00119pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC52_ampt.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 20723 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 19590 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC52_ampt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 18:14:45
-(epstopdf)                    size: 14934 bytes
+(epstopdf)                    date: 2016-11-09 21:03:29
+(epstopdf)                    size: 15073 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC52_ampt-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC52_ampt.eps>
@@ -1953,12 +1944,12 @@ ampt-eps-converted-to.pdf used on input line 196.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC53_ampt.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 19292 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 18533 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC53_ampt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 18:14:45
-(epstopdf)                    size: 14697 bytes
+(epstopdf)                    date: 2016-11-09 21:03:30
+(epstopdf)                    size: 14829 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC53_ampt-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC53_ampt.eps>
@@ -1977,12 +1968,12 @@ ampt-eps-converted-to.pdf used on input line 197.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC43_ampt.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 19653 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 19936 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC43_ampt-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 18:14:46
-(epstopdf)                    size: 14766 bytes
+(epstopdf)                    date: 2016-11-09 21:03:31
+(epstopdf)                    size: 14914 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC43_ampt-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC43_ampt.eps>
@@ -2003,21 +1994,17 @@ ampt-eps-converted-to.pdf used on input line 198.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Reference `fig:AMPTcomhigh' on page 73 undefined on input line 2
-05.
-
 [73 <./figures/fig_ecen/SC_Comparison_ecen_BC_SC52-eps-converted-to.pdf> <./fig
 ures/fig_ecen/SC_Comparison_ecen_BC_SC53-eps-converted-to.pdf> <./figures/fig_e
 cen/SC_Comparison_ecen_BC_SC43-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC52_vish.eps>
-(epstopdf)                    date: 2016-11-08 21:42:16
-(epstopdf)                    size: 22665 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 23517 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC52_vish-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:42:42
-(epstopdf)                    size: 16671 bytes
+(epstopdf)                    date: 2016-11-09 21:03:27
+(epstopdf)                    size: 16831 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC52_vish-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC52_vish.eps>
@@ -2036,12 +2023,12 @@ vish-eps-converted-to.pdf used on input line 216.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC53_vish.eps>
-(epstopdf)                    date: 2016-11-08 21:42:16
-(epstopdf)                    size: 21966 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 22812 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC53_vish-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:42:42
-(epstopdf)                    size: 16139 bytes
+(epstopdf)                    date: 2016-11-09 21:03:28
+(epstopdf)                    size: 16300 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC53_vish-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC53_vish.eps>
@@ -2060,12 +2047,12 @@ vish-eps-converted-to.pdf used on input line 217.
 (pdftex.def)             Requested size: 510.9075pt x 739.76193pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC43_vish.eps>
-(epstopdf)                    date: 2016-11-08 21:42:17
-(epstopdf)                    size: 24179 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 25034 bytes
 (epstopdf)             Output file: <figures/figs_results/fig3_QConly_ModelComp
 arison_SC43_vish-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-08 21:42:42
-(epstopdf)                    size: 16860 bytes
+(epstopdf)                    date: 2016-11-09 21:03:29
+(epstopdf)                    size: 17028 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig3_
 QConly_ModelComparison_SC43_vish-eps-converted-to.pdf figures/figs_results/fig3
 _QConly_ModelComparison_SC43_vish.eps>
@@ -2095,12 +2082,12 @@ n_SC53_vish-eps-converted-to.pdf> <./figures/figs_results/fig3_QConly_ModelComp
 arison_SC43_vish-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/figs_results/fig4_QConly_SC_ptdep.
 eps>
-(epstopdf)                    date: 2016-10-05 20:31:27
-(epstopdf)                    size: 14216 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 15449 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4_QConly_SC_ptdep-
 eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-24 16:05:13
-(epstopdf)                    size: 12327 bytes
+(epstopdf)                    date: 2016-11-09 21:03:21
+(epstopdf)                    size: 12456 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4_
 QConly_SC_ptdep-eps-converted-to.pdf figures/figs_results/fig4_QConly_SC_ptdep.
 eps>
@@ -2108,22 +2095,22 @@ eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_results/fig4_QConly_SC_ptdep-eps-converted-to.pdf, id=808, 569.12
-625pt x 410.53375pt>
+625pt x 409.53pt>
 File: figures/figs_results/fig4_QConly_SC_ptdep-eps-converted-to.pdf Graphic fi
 le (type pdf)
 
 <use figures/figs_results/fig4_QConly_SC_ptdep-eps-converted-to.pdf>
 Package pdftex.def Info: figures/figs_results/fig4_QConly_SC_ptdep-eps-converte
 d-to.pdf used on input line 245.
-(pdftex.def)             Requested size: 569.12486pt x 410.53275pt.
+(pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig4_QConly_nSC_ptdep
 .eps>
-(epstopdf)                    date: 2016-10-05 20:31:27
-(epstopdf)                    size: 15729 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 18074 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4_QConly_nSC_ptdep
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-18 14:24:54
-(epstopdf)                    size: 12894 bytes
+(epstopdf)                    date: 2016-11-09 21:03:22
+(epstopdf)                    size: 13406 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4_
 QConly_nSC_ptdep-eps-converted-to.pdf figures/figs_results/fig4_QConly_nSC_ptde
 p.eps>
@@ -2141,12 +2128,12 @@ ed-to.pdf used on input line 246.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig4_QConly_nSC_ptdep
 _ratio.eps>
-(epstopdf)                    date: 2016-10-05 20:31:27
-(epstopdf)                    size: 14331 bytes
+(epstopdf)                    date: 2016-11-15 14:07:21
+(epstopdf)                    size: 14836 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4_QConly_nSC_ptdep
 _ratio-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-06 17:40:41
-(epstopdf)                    size: 11309 bytes
+(epstopdf)                    date: 2016-11-15 14:08:32
+(epstopdf)                    size: 12935 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4_
 QConly_nSC_ptdep_ratio-eps-converted-to.pdf figures/figs_results/fig4_QConly_nS
 C_ptdep_ratio.eps>
@@ -2164,16 +2151,16 @@ onverted-to.pdf used on input line 247.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 
 
-LaTeX Warning: Float too large for page by 15.33246pt on input line 251.
+LaTeX Warning: Float too large for page by 14.92598pt on input line 251.
 
 Package epstopdf Info: Source file: <figures/figs_results/fig4b_QConly_SC_ptdep
 .eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 15954 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 15723 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4b_QConly_SC_ptdep
 -eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-18 14:24:54
-(epstopdf)                    size: 12973 bytes
+(epstopdf)                    date: 2016-11-09 21:03:22
+(epstopdf)                    size: 12958 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4b
 _QConly_SC_ptdep-eps-converted-to.pdf figures/figs_results/fig4b_QConly_SC_ptde
 p.eps>
@@ -2191,12 +2178,12 @@ ed-to.pdf used on input line 256.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig4b_QConly_nSC_ptde
 p.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 17447 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 19909 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4b_QConly_nSC_ptde
 p-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-18 14:24:55
-(epstopdf)                    size: 13839 bytes
+(epstopdf)                    date: 2016-11-09 21:03:23
+(epstopdf)                    size: 14346 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4b
 _QConly_nSC_ptdep-eps-converted-to.pdf figures/figs_results/fig4b_QConly_nSC_pt
 dep.eps>
@@ -2214,12 +2201,12 @@ ted-to.pdf used on input line 257.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig4b_QConly_nSC_ptde
 p_ratio.eps>
-(epstopdf)                    date: 2016-10-05 20:24:03
-(epstopdf)                    size: 16450 bytes
+(epstopdf)                    date: 2016-11-15 14:07:44
+(epstopdf)                    size: 16914 bytes
 (epstopdf)             Output file: <figures/figs_results/fig4b_QConly_nSC_ptde
 p_ratio-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-10-06 17:40:42
-(epstopdf)                    size: 12365 bytes
+(epstopdf)                    date: 2016-11-15 14:08:32
+(epstopdf)                    size: 14192 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig4b
 _QConly_nSC_ptdep_ratio-eps-converted-to.pdf figures/figs_results/fig4b_QConly_
 nSC_ptdep_ratio.eps>
@@ -2241,12 +2228,12 @@ LaTeX Warning: Float too large for page by 14.92598pt on input line 262.
 
 Package epstopdf Info: Source file: <figures/figs_results/fig5_QConly_xminpt_nS
 C32.eps>
-(epstopdf)                    date: 2016-11-03 12:44:48
-(epstopdf)                    size: 33829 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 34587 bytes
 (epstopdf)             Output file: <figures/figs_results/fig5_QConly_xminpt_nS
 C32-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-03 12:45:21
-(epstopdf)                    size: 23485 bytes
+(epstopdf)                    date: 2016-11-09 21:03:32
+(epstopdf)                    size: 23903 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig5_
 QConly_xminpt_nSC32-eps-converted-to.pdf figures/figs_results/fig5_QConly_xminp
 t_nSC32.eps>
@@ -2264,12 +2251,12 @@ erted-to.pdf used on input line 267.
 (pdftex.def)             Requested size: 569.12486pt x 367.37158pt.
 Package epstopdf Info: Source file: <figures/figs_results/fig5_QConly_xminpt_nS
 C42.eps>
-(epstopdf)                    date: 2016-11-03 12:44:48
-(epstopdf)                    size: 40722 bytes
+(epstopdf)                    date: 2016-11-09 21:03:03
+(epstopdf)                    size: 41478 bytes
 (epstopdf)             Output file: <figures/figs_results/fig5_QConly_xminpt_nS
 C42-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-11-03 12:45:21
-(epstopdf)                    size: 25587 bytes
+(epstopdf)                    date: 2016-11-09 21:03:32
+(epstopdf)                    size: 26417 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_results/fig5_
 QConly_xminpt_nSC42-eps-converted-to.pdf figures/figs_results/fig5_QConly_xminp
 t_nSC42.eps>
@@ -2306,7 +2293,7 @@ SP/fig1a-eps-converted-to.pdf figures/figs_compare_with_SP/fig1a.eps>
 (epstopdf)             \includegraphics on input line 286.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig1a-eps-converted-to.pdf, id=920, 569.12625pt x
+<figures/figs_compare_with_SP/fig1a-eps-converted-to.pdf, id=930, 569.12625pt x
  642.4pt>
 File: figures/figs_compare_with_SP/fig1a-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2326,7 +2313,7 @@ SP/fig1b-eps-converted-to.pdf figures/figs_compare_with_SP/fig1b.eps>
 (epstopdf)             \includegraphics on input line 287.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig1b-eps-converted-to.pdf, id=921, 569.12625pt x
+<figures/figs_compare_with_SP/fig1b-eps-converted-to.pdf, id=931, 569.12625pt x
  642.4pt>
 File: figures/figs_compare_with_SP/fig1b-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2346,7 +2333,7 @@ SP/fig2b_1-eps-converted-to.pdf figures/figs_compare_with_SP/fig2b_1.eps>
 (epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig2b_1-eps-converted-to.pdf, id=922, 569.12625pt
+<figures/figs_compare_with_SP/fig2b_1-eps-converted-to.pdf, id=932, 569.12625pt
  x 409.53pt>
 File: figures/figs_compare_with_SP/fig2b_1-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -2366,7 +2353,7 @@ SP/fig2b_2-eps-converted-to.pdf figures/figs_compare_with_SP/fig2b_2.eps>
 (epstopdf)             \includegraphics on input line 310.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig2b_2-eps-converted-to.pdf, id=923, 569.12625pt
+<figures/figs_compare_with_SP/fig2b_2-eps-converted-to.pdf, id=933, 569.12625pt
  x 409.53pt>
 File: figures/figs_compare_with_SP/fig2b_2-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -2381,7 +2368,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [80
 
 ]
-Overfull \hbox (2.3285pt too wide) in paragraph at lines 320--321
+Overfull \hbox (2.33823pt too wide) in paragraph at lines 320--321
 []\OT1/ptm/m/n/10.95 The $\OML/cmm/m/it/10.95 p[]$ \OT1/ptm/m/n/10.95 de-pen-de
 nce of $\OML/cmm/m/it/10.95 SC\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/
 cmr/m/n/10.95 )$ \OT1/ptm/m/n/10.95 and $\OML/cmm/m/it/10.95 NSC\OT1/cmr/m/n/10
@@ -2390,18 +2377,18 @@ ked with the SP method.
  []
 
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3a.eps>
-(epstopdf)                    date: 2016-06-08 17:37:33
-(epstopdf)                    size: 12853 bytes
+(epstopdf)                    date: 2016-11-15 14:02:53
+(epstopdf)                    size: 12852 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3a-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:01
-(epstopdf)                    size: 12248 bytes
+(epstopdf)                    date: 2016-11-15 14:03:40
+(epstopdf)                    size: 12341 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3a-eps-converted-to.pdf figures/figs_compare_with_SP/fig3a.eps>
 (epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3a-eps-converted-to.pdf, id=927, 569.12625pt x
+<figures/figs_compare_with_SP/fig3a-eps-converted-to.pdf, id=937, 569.12625pt x
  409.53pt>
 File: figures/figs_compare_with_SP/fig3a-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2410,18 +2397,18 @@ Package pdftex.def Info: figures/figs_compare_with_SP/fig3a-eps-converted-to.pd
 f used on input line 325.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3b.eps>
-(epstopdf)                    date: 2016-06-08 17:37:34
-(epstopdf)                    size: 15104 bytes
+(epstopdf)                    date: 2016-11-15 14:02:53
+(epstopdf)                    size: 14323 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3b-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:02
-(epstopdf)                    size: 12567 bytes
+(epstopdf)                    date: 2016-11-15 14:03:41
+(epstopdf)                    size: 13035 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3b-eps-converted-to.pdf figures/figs_compare_with_SP/fig3b.eps>
 (epstopdf)             \includegraphics on input line 326.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3b-eps-converted-to.pdf, id=928, 569.12625pt x
+<figures/figs_compare_with_SP/fig3b-eps-converted-to.pdf, id=938, 569.12625pt x
  409.53pt>
 File: figures/figs_compare_with_SP/fig3b-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2431,19 +2418,19 @@ f used on input line 326.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3a_higherp
 t.eps>
-(epstopdf)                    date: 2016-06-08 17:38:40
-(epstopdf)                    size: 17151 bytes
+(epstopdf)                    date: 2016-11-15 14:03:25
+(epstopdf)                    size: 17152 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3a_higherp
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:03
-(epstopdf)                    size: 13706 bytes
+(epstopdf)                    date: 2016-11-15 14:03:41
+(epstopdf)                    size: 13731 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3a_higherpt-eps-converted-to.pdf figures/figs_compare_with_SP/fig3a_highe
 rpt.eps>
 (epstopdf)             \includegraphics on input line 335.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3a_higherpt-eps-converted-to.pdf, id=929, 569.
+<figures/figs_compare_with_SP/fig3a_higherpt-eps-converted-to.pdf, id=939, 569.
 12625pt x 409.53pt>
 File: figures/figs_compare_with_SP/fig3a_higherpt-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -2454,19 +2441,19 @@ ted-to.pdf used on input line 335.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3b_higherp
 t.eps>
-(epstopdf)                    date: 2016-06-08 17:38:40
-(epstopdf)                    size: 19849 bytes
+(epstopdf)                    date: 2016-11-15 14:03:26
+(epstopdf)                    size: 19058 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3b_higherp
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:04
-(epstopdf)                    size: 14583 bytes
+(epstopdf)                    date: 2016-11-15 14:03:42
+(epstopdf)                    size: 14922 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3b_higherpt-eps-converted-to.pdf figures/figs_compare_with_SP/fig3b_highe
 rpt.eps>
 (epstopdf)             \includegraphics on input line 336.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3b_higherpt-eps-converted-to.pdf, id=930, 569.
+<figures/figs_compare_with_SP/fig3b_higherpt-eps-converted-to.pdf, id=940, 569.
 12625pt x 409.53pt>
 File: figures/figs_compare_with_SP/fig3b_higherpt-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -2476,18 +2463,18 @@ Package pdftex.def Info: figures/figs_compare_with_SP/fig3b_higherpt-eps-conver
 ted-to.pdf used on input line 336.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3c.eps>
-(epstopdf)                    date: 2016-06-08 17:37:34
-(epstopdf)                    size: 14283 bytes
+(epstopdf)                    date: 2016-11-15 14:02:53
+(epstopdf)                    size: 14802 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3c-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:02
-(epstopdf)                    size: 11308 bytes
+(epstopdf)                    date: 2016-11-15 14:03:42
+(epstopdf)                    size: 13455 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3c-eps-converted-to.pdf figures/figs_compare_with_SP/fig3c.eps>
 (epstopdf)             \includegraphics on input line 346.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3c-eps-converted-to.pdf, id=931, 569.12625pt x
+<figures/figs_compare_with_SP/fig3c-eps-converted-to.pdf, id=941, 569.12625pt x
  409.53pt>
 File: figures/figs_compare_with_SP/fig3c-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -2497,19 +2484,19 @@ f used on input line 346.
 (pdftex.def)             Requested size: 569.12486pt x 409.52899pt.
 Package epstopdf Info: Source file: <figures/figs_compare_with_SP/fig3c_higherp
 t.eps>
-(epstopdf)                    date: 2016-06-08 17:38:40
-(epstopdf)                    size: 14894 bytes
+(epstopdf)                    date: 2016-11-15 14:03:26
+(epstopdf)                    size: 14909 bytes
 (epstopdf)             Output file: <figures/figs_compare_with_SP/fig3c_higherp
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-06-08 17:53:04
-(epstopdf)                    size: 12306 bytes
+(epstopdf)                    date: 2016-11-15 14:03:43
+(epstopdf)                    size: 12619 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/figs_compare_with_
 SP/fig3c_higherpt-eps-converted-to.pdf figures/figs_compare_with_SP/fig3c_highe
 rpt.eps>
 (epstopdf)             \includegraphics on input line 347.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_compare_with_SP/fig3c_higherpt-eps-converted-to.pdf, id=932, 569.
+<figures/figs_compare_with_SP/fig3c_higherpt-eps-converted-to.pdf, id=942, 569.
 12625pt x 409.53pt>
 File: figures/figs_compare_with_SP/fig3c_higherpt-eps-converted-to.pdf Graphic 
 file (type pdf)
@@ -2566,7 +2553,7 @@ rted-to.pdf figures/5tev_vns.eps>
 (epstopdf)             \includegraphics on input line 130.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/5tev_vns-eps-converted-to.pdf, id=1103, 569.12625pt x 657.45625pt>
+<figures/5tev_vns-eps-converted-to.pdf, id=1116, 569.12625pt x 657.45625pt>
 File: figures/5tev_vns-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/5tev_vns-eps-converted-to.pdf>
@@ -2593,7 +2580,7 @@ on_SC32_ToyMC_low_woJet.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_ToyMC/SC_Comparison_SC32_ToyMC_low_woJet-eps-converted-to.pdf, id
-=1108, 569.12625pt x 642.4pt>
+=1121, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC32_ToyMC_low_woJet-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -2617,7 +2604,7 @@ parison_SC32_highonly_ToyMC_woJet.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_ToyMC/SC_Comparison_SC32_highonly_ToyMC_woJet-eps-converted-to.pd
-f, id=1109, 569.12625pt x 642.4pt>
+f, id=1122, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC32_highonly_ToyMC_woJet-eps-converted-
 to.pdf Graphic file (type pdf)
 
@@ -2645,7 +2632,7 @@ on_SC42_ToyMC_low_woJet.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_ToyMC/SC_Comparison_SC42_ToyMC_low_woJet-eps-converted-to.pdf, id
-=1110, 569.12625pt x 642.4pt>
+=1123, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC42_ToyMC_low_woJet-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -2669,7 +2656,7 @@ parison_SC42_highonly_ToyMC_woJet.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_ToyMC/SC_Comparison_SC42_highonly_ToyMC_woJet-eps-converted-to.pd
-f, id=1111, 569.12625pt x 642.4pt>
+f, id=1124, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC42_highonly_ToyMC_woJet-eps-converted-
 to.pdf Graphic file (type pdf)
 
@@ -2697,7 +2684,7 @@ n_input-eps-converted-to.pdf figures/figs_ToyMC/toymc_vn_input.eps>
 (epstopdf)             \includegraphics on input line 174.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_ToyMC/toymc_vn_input-eps-converted-to.pdf, id=1151, 569.12625pt x
+<figures/figs_ToyMC/toymc_vn_input-eps-converted-to.pdf, id=1164, 569.12625pt x
  536.0025pt>
 File: figures/figs_ToyMC/toymc_vn_input-eps-converted-to.pdf Graphic file (type
  pdf)
@@ -2731,7 +2718,7 @@ oyMC_gaus.eps>
 (epstopdf)             \includegraphics on input line 183.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_ToyMC/SC_Comparison_SC_ToyMC_gaus-eps-converted-to.pdf, id=1152, 
+<figures/figs_ToyMC/SC_Comparison_SC_ToyMC_gaus-eps-converted-to.pdf, id=1165, 
 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC_ToyMC_gaus-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -2759,7 +2746,7 @@ ra_bulkJet-eps-converted-to.pdf figures/figs_ToyMC/ptspectra_bulkJet.eps>
 (epstopdf)             \includegraphics on input line 202.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_ToyMC/ptspectra_bulkJet-eps-converted-to.pdf, id=1174, 569.12625p
+<figures/figs_ToyMC/ptspectra_bulkJet-eps-converted-to.pdf, id=1187, 569.12625p
 t x 642.4pt>
 File: figures/figs_ToyMC/ptspectra_bulkJet-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -2786,8 +2773,8 @@ C32_highM_ToyMC.eps>
 (epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/figs_ToyMC/SC_Comparison_SC32_highM_ToyMC-eps-converted-to.pdf, id=118
-7, 569.12625pt x 642.4pt>
+<figures/figs_ToyMC/SC_Comparison_SC32_highM_ToyMC-eps-converted-to.pdf, id=120
+0, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC32_highM_ToyMC-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
@@ -2810,7 +2797,7 @@ on_SC42_highmulti_ToyMC.eps>
 Package epstopdf Info: Output file is already uptodate.
 
 <figures/figs_ToyMC/SC_Comparison_SC42_highmulti_ToyMC-eps-converted-to.pdf, id
-=1188, 569.12625pt x 642.4pt>
+=1201, 569.12625pt x 642.4pt>
 File: figures/figs_ToyMC/SC_Comparison_SC42_highmulti_ToyMC-eps-converted-to.pd
 f Graphic file (type pdf)
 
@@ -2836,7 +2823,7 @@ Appendix C.
 [105
 
 ] [106]
-<figures/Fig_pathlength/fig1.jpg, id=1252, 930.47626pt x 921.4425pt>
+<figures/Fig_pathlength/fig1.jpg, id=1265, 930.47626pt x 921.4425pt>
 File: figures/Fig_pathlength/fig1.jpg Graphic file (type jpg)
 
 <use figures/Fig_pathlength/fig1.jpg>
@@ -2855,7 +2842,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Fig_pathlength/fig2-eps-converted-to.pdf, id=1253, 569.12625pt x 536.0
+<figures/Fig_pathlength/fig2-eps-converted-to.pdf, id=1266, 569.12625pt x 536.0
 025pt>
 File: figures/Fig_pathlength/fig2-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/Fig_pathlength/fig2-eps-converted-to.pdf>
@@ -2883,7 +2870,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 79.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Fig_pathlength/fig3-eps-converted-to.pdf, id=1257, 531.9875pt x 739.76
+<figures/Fig_pathlength/fig3-eps-converted-to.pdf, id=1270, 531.9875pt x 739.76
 375pt>
 File: figures/Fig_pathlength/fig3-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/Fig_pathlength/fig3-eps-converted-to.pdf>
@@ -2904,7 +2891,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Fig_pathlength/fig9-eps-converted-to.pdf, id=1270, 569.12625pt x 536.0
+<figures/Fig_pathlength/fig9-eps-converted-to.pdf, id=1283, 569.12625pt x 536.0
 025pt>
 File: figures/Fig_pathlength/fig9-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/Fig_pathlength/fig9-eps-converted-to.pdf>
@@ -2927,7 +2914,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 104.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Fig_pathlength/fig4-eps-converted-to.pdf, id=1271, 531.9875pt x 739.76
+<figures/Fig_pathlength/fig4-eps-converted-to.pdf, id=1284, 531.9875pt x 739.76
 375pt>
 File: figures/Fig_pathlength/fig4-eps-converted-to.pdf Graphic file (type pdf)
  <use figures/Fig_pathlength/fig4-eps-converted-to.pdf>
@@ -2947,7 +2934,7 @@ Package epstopdf Info: Source file: <figures/Fig_pathlength/fig10.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<figures/Fig_pathlength/fig10-eps-converted-to.pdf, id=1290, 569.12625pt x 540.
+<figures/Fig_pathlength/fig10-eps-converted-to.pdf, id=1304, 569.12625pt x 540.
 0175pt>
 File: figures/Fig_pathlength/fig10-eps-converted-to.pdf Graphic file (type pdf)
 
@@ -2955,55 +2942,18 @@ File: figures/Fig_pathlength/fig10-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/Fig_pathlength/fig10-eps-converted-to.pdf used
  on input line 120.
 (pdftex.def)             Requested size: 209.90474pt x 199.16928pt.
-)
-(./AppendixD.tex [111 <./figures/Fig_pathlength/fig9-eps-converted-to.pdf>]
-[112 <./figures/Fig_pathlength/fig4-eps-converted-to.pdf>] [113 <./figures/Fig_
-pathlength/fig10-eps-converted-to.pdf>]
-Appendix D.
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--15
-
- []
-
-
-Overfull \hbox (8.66936pt too wide) in paragraph at lines 16--17
-[]\OT1/ptm/m/n/10.95 139510, 139507, 139505, 139503, 139465, 139438, 139437, 13
-9360, 139329, 139328,
- []
-
-[114
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
-
-Overfull \hbox (8.66936pt too wide) in paragraph at lines 22--23
-[]\OT1/ptm/m/n/10.95 139510, 139507, 139505, 139503, 139465, 139438, 139437, 13
-9360, 139329, 139328,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
- []
-
-
-Overfull \hbox (14.00027pt too wide) in paragraph at lines 31--38
- [] 
- []
-
-) (./main_org.bbl [115]
+) [111 <./figures/Fig_pathlength/fig9-eps-converted-to.pdf>] [112 <./figures/Fi
+g_pathlength/fig4-eps-converted-to.pdf>] (./main_org.bbl [113 <./figures/Fig_pa
+thlength/fig10-eps-converted-to.pdf>]
 Underfull \hbox (badness 2418) in paragraph at lines 42--45
 []\OT1/ptm/m/n/10.95 S. Cha-trchyan \OT1/ptm/m/it/10.95 et al.\OT1/ptm/m/n/10.9
 5 , ``Mea-sure-ment of higher-order har-monic az-imuthal
  []
 
-[116
+[114
 
-] [117] [118] [119] [120] [121] [122] [123] [124] [125] [126] [127]
-[128]) [129] (./main_org.aux)
+] [115] [116] [117] [118] [119] [120] [121] [122] [123] [124] [125]
+[126]) [127] (./main_org.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.28pt have occurred.
@@ -3020,13 +2970,13 @@ LaTeX Warning: There were multiply-defined labels.
 ### semi simple group (level 1) entered at line 66 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 6134 strings out of 493014
- 94410 string characters out of 6133351
- 145415 words of memory out of 5000000
- 9335 multiletter control sequences out of 15000+600000
+ 6128 strings out of 493014
+ 94323 string characters out of 6133351
+ 145389 words of memory out of 5000000
+ 9332 multiletter control sequences out of 15000+600000
  43923 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,16n,28p,2256b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,16n,28p,2389b,416s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
@@ -3047,10 +2997,10 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on main_org.pdf (144 pages, 14062214 bytes).
+Output written on main_org.pdf (142 pages, 14064715 bytes).
 PDF statistics:
- 1444 PDF objects out of 1728 (max. 8388607)
- 941 compressed objects within 10 object streams
+ 1451 PDF objects out of 1728 (max. 8388607)
+ 946 compressed objects within 10 object streams
  0 named destinations out of 1000 (max. 500000)
  431 words of extra memory for PDF output out of 10000 (max. 10000000)
 
