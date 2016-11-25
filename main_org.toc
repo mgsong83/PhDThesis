@@ -9,80 +9,80 @@
 \contentsline {section}{\numberline {1.1}Quantum Chromo Dynamics (QCD)}{1}
 \contentsline {section}{\numberline {1.2}Quark Gloun Plasma (QGP)}{2}
 \contentsline {section}{\numberline {1.3}Heavy ion collision}{3}
-\contentsline {section}{\numberline {1.4}Flow}{6}
-\contentsline {subsubsection}{Introduction}{6}
+\contentsline {section}{\numberline {1.4}Flow}{7}
+\contentsline {subsubsection}{Introduction}{7}
 \contentsline {subsubsection}{Formal definitions}{8}
-\contentsline {subsection}{\numberline {1.4.1}Event Plane method}{13}
+\contentsline {subsection}{\numberline {1.4.1}Event Plane method}{14}
 \contentsline {subsection}{\numberline {1.4.2}Scalar product method}{16}
-\contentsline {subsection}{\numberline {1.4.3}Cumulants method}{18}
-\contentsline {subsubsection}{Multi particle correlations}{18}
+\contentsline {subsection}{\numberline {1.4.3}Cumulants method}{19}
+\contentsline {subsubsection}{Multi particle correlations}{19}
 \contentsline {subsubsection}{Flow fluctuation}{20}
 \contentsline {section}{\numberline {1.5}Jet quenching}{23}
-\contentsline {section}{\numberline {1.6}Correlation between flow harmonics}{26}
-\contentsline {chapter}{\numberline {2}Experimental setup}{30}
-\contentsline {section}{\numberline {2.1}Large Hardon Collider}{30}
-\contentsline {section}{\numberline {2.2}The ALICE experiment}{32}
-\contentsline {subsection}{\numberline {2.2.1}ITS}{33}
-\contentsline {subsection}{\numberline {2.2.2}TPC}{34}
-\contentsline {subsection}{\numberline {2.2.3}VZERO}{35}
-\contentsline {subsection}{\numberline {2.2.4}Other detectors}{38}
-\contentsline {subsubsection}{TRD}{38}
-\contentsline {subsubsection}{TOF}{38}
-\contentsline {subsubsection}{HMPID}{38}
-\contentsline {subsubsection}{PHOS}{38}
-\contentsline {subsubsection}{EMCAL}{38}
-\contentsline {subsubsection}{Muon Spectrometer}{39}
-\contentsline {subsubsection}{TZERO}{39}
-\contentsline {subsubsection}{Zero Degree Calorimeter}{39}
-\contentsline {subsection}{\numberline {2.2.5}Analysis Framework}{39}
-\contentsline {chapter}{\numberline {3}Data analysis}{41}
-\contentsline {section}{\numberline {3.1}Data selection}{41}
-\contentsline {subsection}{\numberline {3.1.1}Default cuts and settings}{41}
-\contentsline {subsection}{\numberline {3.1.2}Data QA}{43}
-\contentsline {subsubsection}{ $\eta $ distribution QA}{43}
-\contentsline {subsubsection}{ $\phi $ distribution QA}{44}
-\contentsline {section}{\numberline {3.2}Analysis strategy}{45}
-\contentsline {subsubsection}{Measuring $SC(m,n)$ with Scalar Product method}{48}
-\contentsline {section}{\numberline {3.3}Systematics}{51}
-\contentsline {subsection}{\numberline {3.3.1}Systematics from Non uniform phi distribution}{51}
-\contentsline {subsection}{\numberline {3.3.2}Systematics from Event selection}{53}
-\contentsline {subsubsection}{Z-vertex cut}{53}
-\contentsline {subsubsection}{Magnetic polarization}{53}
-\contentsline {subsubsection}{Centrality determination}{54}
-\contentsline {subsubsection}{Cut on outliers}{54}
-\contentsline {subsection}{\numberline {3.3.3}Systematics from Track selection}{55}
-\contentsline {subsubsection}{Track filter bit}{55}
-\contentsline {subsubsection}{Charge combination}{56}
-\contentsline {subsubsection}{Efficiency correction}{57}
-\contentsline {subsection}{\numberline {3.3.4}Overall systematic uncertainty}{57}
-\contentsline {chapter}{\numberline {4}Results}{60}
-\contentsline {section}{\numberline {4.1}$SC(m,n)$ Results}{60}
-\contentsline {subsection}{\numberline {4.1.1}$SC(3,2)$ and $SC(4,2)$}{60}
-\contentsline {subsection}{\numberline {4.1.2}Model Comparison}{63}
-\contentsline {section}{\numberline {4.2}Higher order flow harmonics results}{71}
-\contentsline {section}{\numberline {4.3}$p_{\rm {T}}$ dependence of $SC(m,n)$ and normalized $SC(m,n)$}{75}
-\contentsline {section}{\numberline {4.4}Method comparison}{80}
-\contentsline {subsubsection}{Method comparison of higher order harmonics}{80}
-\contentsline {subsubsection}{$p_{\rm {T}}$ dependence of $SC(m,n)$ with SP method}{81}
-\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{87}
-\contentsline {chapter}{Appendices}{90}
-\contentsline {chapter}{\numberline {A}Toy MC simulation}{91}
-\contentsline {subsection}{\numberline {A.0.1}Toy Monte Calro simulation}{91}
-\contentsline {subsection}{\numberline {A.0.2}Test non-flow effects by impose jets from PYTHIA into ToyMC}{97}
-\contentsline {chapter}{\numberline {B}Choosing weight for event average}{102}
-\contentsline {chapter}{\numberline {C}Jet energy loss as function of path-length}{105}
-\contentsline {section}{\numberline {C.1}Basic motivation}{105}
-\contentsline {section}{\numberline {C.2}Analysis}{105}
-\contentsline {subsection}{\numberline {C.2.1}Inclusive $R_{AA}$}{105}
-\contentsline {subsection}{\numberline {C.2.2}Elliptic flow}{106}
-\contentsline {subsection}{\numberline {C.2.3}$R_{AA}$ as function of $\Delta \phi $}{106}
-\contentsline {subsection}{\numberline {C.2.4}Path-length calculation with Glauber model}{107}
-\contentsline {section}{\numberline {C.3}Result}{108}
-\contentsline {subsection}{\numberline {C.3.1}$R_{AA}(p_T, \Delta \phi )$}{108}
-\contentsline {subsection}{\numberline {C.3.2}Convert $\Delta \phi $ to path-length}{109}
-\contentsline {subsection}{\numberline {C.3.3}Path-length dependence of $R_{AA}$}{109}
-\contentsline {section}{\numberline {C.4}Summary}{111}
+\contentsline {section}{\numberline {1.6}Correlation between flow harmonics}{27}
+\contentsline {chapter}{\numberline {2}Experimental setup}{31}
+\contentsline {section}{\numberline {2.1}Large Hardon Collider}{31}
+\contentsline {section}{\numberline {2.2}The ALICE experiment}{33}
+\contentsline {subsection}{\numberline {2.2.1}ITS}{34}
+\contentsline {subsection}{\numberline {2.2.2}TPC}{35}
+\contentsline {subsection}{\numberline {2.2.3}VZERO}{36}
+\contentsline {subsection}{\numberline {2.2.4}Other detectors}{39}
+\contentsline {subsubsection}{TRD}{39}
+\contentsline {subsubsection}{TOF}{39}
+\contentsline {subsubsection}{HMPID}{39}
+\contentsline {subsubsection}{PHOS}{39}
+\contentsline {subsubsection}{EMCAL}{39}
+\contentsline {subsubsection}{Muon Spectrometer}{40}
+\contentsline {subsubsection}{TZERO}{40}
+\contentsline {subsubsection}{Zero Degree Calorimeter}{40}
+\contentsline {subsection}{\numberline {2.2.5}Analysis Framework}{40}
+\contentsline {chapter}{\numberline {3}Data analysis}{42}
+\contentsline {section}{\numberline {3.1}Data selection}{42}
+\contentsline {subsection}{\numberline {3.1.1}Default cuts and settings}{42}
+\contentsline {subsection}{\numberline {3.1.2}Data QA}{44}
+\contentsline {subsubsection}{ $\eta $ distribution QA}{44}
+\contentsline {subsubsection}{ $\phi $ distribution QA}{45}
+\contentsline {section}{\numberline {3.2}Analysis strategy}{46}
+\contentsline {subsubsection}{Measuring $SC(m,n)$ with Scalar Product method}{49}
+\contentsline {section}{\numberline {3.3}Systematics}{52}
+\contentsline {subsection}{\numberline {3.3.1}Systematics from Non uniform phi distribution}{52}
+\contentsline {subsection}{\numberline {3.3.2}Systematics from Event selection}{54}
+\contentsline {subsubsection}{Z-vertex cut}{54}
+\contentsline {subsubsection}{Magnetic polarization}{54}
+\contentsline {subsubsection}{Centrality determination}{55}
+\contentsline {subsubsection}{Cut on outliers}{55}
+\contentsline {subsection}{\numberline {3.3.3}Systematics from Track selection}{56}
+\contentsline {subsubsection}{Track filter bit}{56}
+\contentsline {subsubsection}{Charge combination}{57}
+\contentsline {subsubsection}{Efficiency correction}{58}
+\contentsline {subsection}{\numberline {3.3.4}Overall systematic uncertainty}{58}
+\contentsline {chapter}{\numberline {4}Results}{61}
+\contentsline {section}{\numberline {4.1}$SC(m,n)$ Results}{61}
+\contentsline {subsection}{\numberline {4.1.1}$SC(3,2)$ and $SC(4,2)$}{61}
+\contentsline {subsection}{\numberline {4.1.2}Model Comparison}{64}
+\contentsline {section}{\numberline {4.2}Higher order flow harmonics results}{72}
+\contentsline {section}{\numberline {4.3}$p_{\rm {T}}$ dependence of $SC(m,n)$ and $NSC(m,n)$}{76}
+\contentsline {section}{\numberline {4.4}Method comparison}{81}
+\contentsline {subsubsection}{Method comparison of higher order harmonics}{81}
+\contentsline {subsubsection}{$p_{\rm {T}}$ dependence of $SC(m,n)$ with SP method}{82}
+\contentsline {chapter}{\numberline {5}Conclusion and Outlook}{88}
+\contentsline {chapter}{Appendices}{91}
+\contentsline {chapter}{\numberline {A}Toy MC simulation}{92}
+\contentsline {subsection}{\numberline {A.0.1}Toy Monte Calro simulation}{92}
+\contentsline {subsection}{\numberline {A.0.2}Test non-flow effects by impose jets from PYTHIA into ToyMC}{98}
+\contentsline {chapter}{\numberline {B}Choosing weight for event average}{103}
+\contentsline {chapter}{\numberline {C}Jet energy loss as function of path-length}{106}
+\contentsline {section}{\numberline {C.1}Basic motivation}{106}
+\contentsline {section}{\numberline {C.2}Analysis}{106}
+\contentsline {subsection}{\numberline {C.2.1}Inclusive $R_{AA}$}{106}
+\contentsline {subsection}{\numberline {C.2.2}Elliptic flow}{107}
+\contentsline {subsection}{\numberline {C.2.3}$R_{AA}$ as function of $\Delta \phi $}{107}
+\contentsline {subsection}{\numberline {C.2.4}Path-length calculation with Glauber model}{108}
+\contentsline {section}{\numberline {C.3}Result}{109}
+\contentsline {subsection}{\numberline {C.3.1}$R_{AA}(p_T, \Delta \phi )$}{109}
+\contentsline {subsection}{\numberline {C.3.2}Convert $\Delta \phi $ to path-length}{110}
+\contentsline {subsection}{\numberline {C.3.3}Path-length dependence of $R_{AA}$}{110}
+\contentsline {section}{\numberline {C.4}Summary}{112}
 \ttl@change@i {\@ne }{chapter}{0pt}{}{\bfseries \ \hspace {13pt} }{ }{\bfseries \dotfill \contentspage }\relax 
 \ttl@change@v {chapter}{}{}{}\relax 
-\contentsline {chapter}{\numberline {} \@LN@changevadjust \vspace {0pt}\hspace *{-0.3in} References}{113}
+\contentsline {chapter}{\numberline {} \@LN@changevadjust \vspace {0pt}\hspace *{-0.3in} References}{114}
 \contentsfinish 
