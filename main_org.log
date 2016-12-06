@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.5)  25 NOV 2016 16:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.5)  30 NOV 2016 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,16 +991,16 @@ t/10.95 NSC\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 m; n\OT1/cmr/m/n/10.95 )$\OT
 
  (./abstract.tex [11
 
-] [12
+]
+Overfull \hbox (3.43709pt too wide) in paragraph at lines 20--21
+\OT1/ptm/m/n/10.95 tem-per-a-ture and en-ergy den-sity was proved by the Rel-a-
+tivis-tic Heavy Ion Col-lider (RHIC)
+ []
+
+[12
 
 
 ]
-Overfull \hbox (9.97394pt too wide) in paragraph at lines 24--25
-\OT1/ptm/m/n/10.95 quan-tify the cor-re-la-tion be-tween flow har-mon-ics, new 
-ob-serv-able $\OML/cmm/m/it/10.95 SymmetricCumulants$
- []
-
-
 Underfull \hbox (badness 2409) in paragraph at lines 34--34
 []\OT1/ptm/m/n/10.95 LHC, AL-ICE, Flow, Cor-re-la-tion, Fluc-tu-a-tion, el-lip-
 tic flow($\OML/cmm/m/it/10.95 v[]$\OT1/ptm/m/n/10.95 ),
@@ -1020,7 +1020,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 
 
 ] [2]
-<figures/Phasendiagram.jpg, id=68, 547.01927pt x 368.9883pt>
+<figures/Phasendiagram.jpg, id=69, 547.01927pt x 368.9883pt>
 File: figures/Phasendiagram.jpg Graphic file (type jpg)
 
 <use figures/Phasendiagram.jpg>
@@ -2949,7 +2949,7 @@ mf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
 e1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on main_org.pdf (143 pages, 12284839 bytes).
+Output written on main_org.pdf (143 pages, 12284580 bytes).
 PDF statistics:
  1510 PDF objects out of 1728 (max. 8388607)
  964 compressed objects within 10 object streams
